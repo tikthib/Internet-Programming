@@ -1,0 +1,149 @@
+body {
+    background: #F4F6F7;
+}
+.wrapper {
+    width: 42%;
+    /* width: 40%; */
+    height: auto;
+    margin: auto;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 60px 60px;
+    box-shadow: 0px 14px 62px -12px rgba(32, 42, 77, 0.1);
+    border-radius: 12px;
+}
+
+
+h3 {
+    font-size: 24px;
+    font-weight: 900;
+    color: #202a4d;
+    line-height: 24px;
+}
+label{
+    font-weight: 600;
+    color: #202a4d;
+    font-size: 16px;
+}
+.form-control{
+    padding: 9px;
+}
+
+.btn-color {
+    background: #0096de;
+    border-color: #0096de;
+    text-shadow: 0 0 1px rgb(0 0 0/80%) !important;
+    color: #fff;
+    font-weight: 700;
+}
+
+.btn-color:hover {
+    color: #fff;
+    background: #047db4;
+}
+
+.devide {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #888;
+    position: relative;
+
+}
+
+span {
+    background: #fff;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    z-index: 9;
+    font-size: 16px;
+}
+
+.devide::before {
+    content: '';
+    height: 1px;
+    background: #e1e1e1;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 12px;
+    box-sizing: border-box;
+}
+
+.btn-facebook {
+    background: #1877F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span.bi.bi-facebook {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+.fb-content {
+    margin: 0 12px;
+    color: #fff;
+}
+.btn-login{
+    background-color: #FF8900;
+    color: #fff;
+    font-weight: 700;
+}
+.btn-login:hover{
+    background-color: #f0850a;
+}
+
+
+
+@media only screen and (max-width: 1400px){
+    .wrapper {
+        width: 50%;
+        /* width: 40%; */
+        height: auto;
+        margin: auto;
+        background: #fff;
+        box-sizing: border-box;
+        padding: 60px 60px;
+        box-shadow: 0px 14px 62px -12px rgba(32, 42, 77, 0.1);
+        border-radius: 12px;
+    }
+    .btn-facebook {
+        /* background: #a9bbd3;
+        width: 80%; */
+    }
+}
+@media only screen and (max-width: 1200px){
+    .wrapper {
+        width: 56%;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .wrapper {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 995px){
+    .wrapper {
+        width: 65%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .wrapper {
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 576px){
+    .wrapper {
+        width: 90%;
+    }
+}

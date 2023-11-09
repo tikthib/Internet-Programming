@@ -73,6 +73,20 @@ input::placeholder{
 }
 
 
+/* list categories */
+
+.list-categories,.title h3{
+    width: 75%;
+    margin: auto;
+}
+.list-categories .row{
+    background:#fff !important;
+}
+
+
+
+
+
 /* footer */
 
 .footer{

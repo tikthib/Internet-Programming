@@ -3,7 +3,6 @@ body {
 }
 .wrapper {
     width: 42%;
-    /* width: 40%; */
     height: auto;
     margin: auto;
     background: #fff;
@@ -108,7 +107,6 @@ span.bi.bi-facebook {
 @media only screen and (max-width: 1400px){
     .wrapper {
         width: 50%;
-        /* width: 40%; */
         height: auto;
         margin: auto;
         background: #fff;
@@ -116,10 +114,6 @@ span.bi.bi-facebook {
         padding: 60px 60px;
         box-shadow: 0px 14px 62px -12px rgba(32, 42, 77, 0.1);
         border-radius: 12px;
-    }
-    .btn-facebook {
-        /* background: #a9bbd3;
-        width: 80%; */
     }
 }
 @media only screen and (max-width: 1200px){

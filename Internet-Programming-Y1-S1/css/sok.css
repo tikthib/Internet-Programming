@@ -16,6 +16,7 @@ body {
 }
 .card {
     width: 300px;
+    /* width: 300px; */
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
@@ -54,7 +55,8 @@ img {
     text-decoration: none;
     text-align: center;
 }
-@media screen and (max-width: 1400px) and (min-width: 1200px) {
+@media screen and (max-width: 1400px) {
+/* @media screen and (max-width: 1400px) and (min-width: 1200px) { */
     .latest-ads-container {
         width: 90%;
     }

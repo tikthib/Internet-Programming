@@ -1,1152 +1,1236 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" /> -->
-    <link rel="stylesheet" href="css/home.css" />
-    <script src="js/home.js"></script>
-  </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <div class="d-flex mr-5" style="margin-right: 100px">
-          <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
-            <img
-              src="images/logo/logo.png"
-              height="40"
-              alt="khmer24 Logo"
-              loading="lazy"
-              style="margin-top: 2px"
-            />
-          </a>
-        </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav flex-row d-md-flex" id="navbarSupportedContent">
-            <form class="seach-control show d-flex">
-              <div class="input-group">
-                <select id="courseSelect" class="select-category form-select">
-                  <option selected>All Category</option>
-                </select>
-                <input
-                  type="search"
-                  placeholder="What are you looking for..."
-                  class="search-content form-control border-end-0"
-                  aria-label="Dollar amount (with dot and two decimal places)"
-                />
-                <button
-                  type="button"
-                  class="btn border-bottom border-end border-top outline"
-                >
-                  <i class="bi-search"></i>
-                </button>
-              </div>
-            </form>
-          </ul>
-          <form class="d-flex">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/pages/login.html"
-                  >Login</a
-                >
-              </li>
-            </ul>
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active color-or" aria-current="page" href="#"
-                  >Or</a
-                >
-              </li>
-            </ul>
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/pages/registerForm.html"
-                  >Register</a
-                >
-              </li>
-            </ul>
-            <div class="button-post">
-              <a class="nav-link btn btn-post btn-warning long-text" href="">
-                POST FREE AD</a
-              >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" /> -->
+  <link rel="stylesheet" href="css/home.css" />
+  <script src="js/home.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="d-flex mr-5" style="margin-right: 100px">
+        <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
+          <img src="images/logo/logo.png" height="40" alt="khmer24 Logo" loading="lazy" style="margin-top: 2px" />
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav flex-row d-md-flex" id="navbarSupportedContent">
+          <form class="seach-control show d-flex">
+            <div class="input-group">
+              <select id="courseSelect" class="select-category form-select">
+                <option selected>All Category</option>
+              </select>
+              <input type="search" placeholder="What are you looking for..."
+                class="search-content form-control border-end-0"
+                aria-label="Dollar amount (with dot and two decimal places)" />
+              <button type="button" class="btn border-bottom border-end border-top outline">
+                <i class="bi-search"></i>
+              </button>
             </div>
           </form>
-        </div>
-      </div>
-    </nav>
-
-    <div class="breadcrumbs">
-      <img
-        src="images/background/background.jpg"
-        alt=""
-        title=""
-        border="0"
-        class="img-fluid"
-      />
-    </div>
-    <div class="title mt-3 mb-3">
-      <h3>Welcome to khmer24.com, the biggest online market in Cambodia.</h3>
-    </div>
-
-    <!-- list categories -->
-    <div class="list-categories">
-      <div class="list-group"></div>
-      <div class="row">
-        <div class="col-4 p-0">
-          <div
-            id="listId"
-            class="list-group"
-            id="list-tab"
-            role="tablist"
-          ></div>
-        </div>
-        <div class="col-8">
-          <div class="tab-content d-flex flex-wrap" id="nav-tabContent"></div>
-        </div>
+        </ul>
+        <form class="d-flex">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/pages/login.html">Login</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active color-or" aria-current="page" href="#">Or</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/pages/registerForm.html">Register</a>
+            </li>
+          </ul>
+          <div class="button-post">
+            <a class="nav-link btn btn-post btn-warning long-text" href="">
+              POST FREE AD</a>
+          </div>
+        </form>
       </div>
     </div>
+  </nav>
 
-    <!-- Latest ads -->
-    <div class="latest mt-3 ">
-        <h3>Latest Ads</h3>
-      <div class="row row-cols-1 mt-2 row-cols-lg-4 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <img src="../images/ads/car2.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">𝗥𝗲𝗱𝗺𝗶𝗕𝗼𝗼𝗸  CPU Core i7, RAM 16GB, SSD 512GB</h5>
-              <h5 class="card-text">200$</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="../images/ads/car2.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">𝗥𝗲𝗱𝗺𝗶𝗕𝗼𝗼𝗸  CPU Core i7, RAM 16GB, SSD 512GB</h5>
-              <h5 class="card-text">2400$</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="../images/ads/car2.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">𝗥𝗲𝗱𝗺𝗶𝗕𝗼𝗼𝗸 𝗔𝗶𝗿 𝟭𝟯 𝟮𝟬𝟮𝟬 ( 𝗚𝗿𝗮𝗱𝗲 𝗔 𝟵𝟵% ) CPU Core i7, RAM 16GB, SSD 512GB</h5>
-              <h5 class="card-text">200$</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="../images/ads/car2.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">𝗥𝗲𝗱𝗺𝗶𝗕𝗼𝗼𝗸 𝗔𝗶𝗿 𝟭𝟯 𝟮𝟬𝟮𝟬 ( 𝗚𝗿𝗮𝗱𝗲 𝗔 𝟵𝟵% ) CPU Core i7, RAM 16GB, SSD 512GB</h5>
-              <h5 class="card-text">200$</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="../images/ads/car2.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">𝗥𝗲𝗱𝗺𝗶𝗕𝗼𝗼𝗸  CPU Core i7, RAM 16GB, SSD 512GB</h5>
-              <h5 class="card-text">200$</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="../images/ads/car2.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">𝗥𝗲𝗱𝗺𝗶𝗕𝗼𝗼𝗸  CPU Core i7, RAM 16GB, SSD 512GB</h5>
-              <h5 class="card-text">200$</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="../images/ads/car2.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">𝗥𝗲𝗱𝗺𝗶𝗕𝗼𝗼𝗸 𝗔𝗶𝗿 𝟭𝟯 𝟮𝟬𝟮𝟬 ( 𝗚𝗿𝗮𝗱𝗲 𝗔 𝟵𝟵% ) CPU Core i7, RAM 16GB, SSD 512GB</h5>
-              <h5 class="card-text">200$</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="../images/ads/car2.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">𝗥𝗲𝗱𝗺𝗶𝗕𝗼𝗼𝗸 𝗔𝗶𝗿 𝟭𝟯 𝟮𝟬𝟮𝟬 ( 𝗚𝗿𝗮𝗱𝗲 𝗔 𝟵𝟵% ) CPU Core i7, RAM 16GB, SSD 512GB</h5>
-              <h5 class="card-text">200$</h5>
-            </div>
+  <div class="breadcrumbs">
+    <img src="images/background/background.jpg" alt="" title="" border="0" class="img-fluid" />
+  </div>
+  <div class="title mt-3 mb-3">
+    <h3>Welcome to khmer24.com, the biggest online market in Cambodia.</h3>
+  </div>
+
+  <!-- list categories -->
+  <div class="list-categories">
+    <div class="list-group"></div>
+    <div class="row">
+      <div class="col-4 p-0">
+        <div id="listId" class="list-group" id="list-tab" role="tablist"></div>
+      </div>
+      <div class="col-8">
+        <div class="tab-content d-flex flex-wrap" id="nav-tabContent"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Latest ads -->
+  <div class="latest mt-3 ">
+    <h3>Latest Ads</h3>
+    <div class="row row-cols-1 mt-2 row-cols-lg-4 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="../images/ads/test.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">𝗥𝗲𝗱𝗺𝗶𝗕𝗼𝗼𝗸 CPU Core i7, RAM 16GB, SSD 512GB</h5>
+            <h5 class="card-text">200$</h5>
           </div>
         </div>
       </div>
-    </div>
-
-
-    <!-- Footer -->
-    <footer class="text-center text-lg-start bg-light text-muted mt-5">
-      <section
-        class="d-flex justify-content-center justify-content-lg-between bg-color"
-      >
-        <div class="me-4 d-none d-lg-block m-auto">
-          <img src="images/footer/footer.png" alt="" class="img-fluid" />
+      <div class="col">
+        <div class="card h-100">
+          <img src="../images/ads/laptop1.jpg"  class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">𝗥𝗲𝗱𝗺𝗶𝗕𝗼𝗼𝗸 CPU Core i7, RAM 16GB, SSD 512GB</h5>
+            <h5 class="card-text">2400$</h5>
+          </div>
         </div>
-      </section>
-      <section class="footer mt-0">
-        <div class="container text-center text-md-start">
-          <div class="row">
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">Follow Khmer24</h6>
-              <div class="media-content d-flex">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  fill="#ffff"
-                  class="bi bi-facebook"
-                  viewBox="0 0 16 16"
-                >
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../images/ads/car2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">𝗥𝗲𝗱𝗺𝗶𝗕𝗼𝗼𝗸 𝗔𝗶𝗿 𝟭𝟯 𝟮𝟬𝟮𝟬 ( 𝗚𝗿𝗮𝗱𝗲 𝗔 𝟵𝟵% ) CPU Core i7, RAM
+              16GB, SSD 512GB</h5>
+            <h5 class="card-text">200$</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../images/ads/car2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">𝗥𝗲𝗱𝗺𝗶𝗕𝗼𝗼𝗸 𝗔𝗶𝗿 𝟭𝟯 𝟮𝟬𝟮𝟬 ( 𝗚𝗿𝗮𝗱𝗲 𝗔 𝟵𝟵% ) CPU Core i7, RAM
+              16GB, SSD 512GB</h5>
+            <h5 class="card-text">200$</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../images/ads/car2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">𝗥𝗲𝗱𝗺𝗶𝗕𝗼𝗼𝗸 CPU Core i7, RAM 16GB, SSD 512GB</h5>
+            <h5 class="card-text">200$</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../images/ads/car2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">𝗥𝗲𝗱𝗺𝗶𝗕𝗼𝗼𝗸 CPU Core i7, RAM 16GB, SSD 512GB</h5>
+            <h5 class="card-text">200$</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../images/ads/car2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">𝗥𝗲𝗱𝗺𝗶𝗕𝗼𝗼𝗸 𝗔𝗶𝗿 𝟭𝟯 𝟮𝟬𝟮𝟬 ( 𝗚𝗿𝗮𝗱𝗲 𝗔 𝟵𝟵% ) CPU Core i7, RAM
+              16GB, SSD 512GB</h5>
+            <h5 class="card-text">200$</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../images/ads/car2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">𝗥𝗲𝗱𝗺𝗶𝗕𝗼𝗼𝗸 𝗔𝗶𝗿 𝟭𝟯 𝟮𝟬𝟮𝟬 ( 𝗚𝗿𝗮𝗱𝗲 𝗔 𝟵𝟵% ) CPU Core i7, RAM
+              16GB, SSD 512GB</h5>
+            <h5 class="card-text">200$</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../images/ads/car2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">𝗥𝗲𝗱𝗺𝗶𝗕𝗼𝗼𝗸 𝗔𝗶𝗿 𝟭𝟯 𝟮𝟬𝟮𝟬 ( 𝗚𝗿𝗮𝗱𝗲 𝗔 𝟵𝟵% ) CPU Core i7, RAM
+              16GB, SSD 512GB</h5>
+            <h5 class="card-text">200$</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../images/ads/car2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">𝗥𝗲𝗱𝗺𝗶𝗕𝗼𝗼𝗸 𝗔𝗶𝗿 𝟭𝟯 𝟮𝟬𝟮𝟬 ( 𝗚𝗿𝗮𝗱𝗲 𝗔 𝟵𝟵% ) CPU Core i7, RAM
+              16GB, SSD 512GB</h5>
+            <h5 class="card-text">200$</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../images/ads/car2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">𝗥𝗲𝗱𝗺𝗶𝗕𝗼𝗼𝗸 𝗔𝗶𝗿 𝟭𝟯 𝟮𝟬𝟮𝟬 ( 𝗚𝗿𝗮𝗱𝗲 𝗔 𝟵𝟵% ) CPU Core i7, RAM
+              16GB, SSD 512GB</h5>
+            <h5 class="card-text">200$</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../images/ads/car2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">𝗥𝗲𝗱𝗺𝗶𝗕𝗼𝗼𝗸 𝗔𝗶𝗿 𝟭𝟯 𝟮𝟬𝟮𝟬 ( 𝗚𝗿𝗮𝗱𝗲 𝗔 𝟵𝟵% ) CPU Core i7, RAM
+              16GB, SSD 512GB</h5>
+            <h5 class="card-text">200$</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../images/ads/car2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">𝗥𝗲𝗱𝗺𝗶𝗕𝗼𝗼𝗸 𝗔𝗶𝗿 𝟭𝟯 𝟮𝟬𝟮𝟬 ( 𝗚𝗿𝗮𝗱𝗲 𝗔 𝟵𝟵% ) CPU Core i7, RAM
+              16GB, SSD 512GB</h5>
+            <h5 class="card-text">200$</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../images/ads/car2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">𝗥𝗲𝗱𝗺𝗶𝗕𝗼𝗼𝗸 𝗔𝗶𝗿 𝟭𝟯 𝟮𝟬𝟮𝟬 ( 𝗚𝗿𝗮𝗱𝗲 𝗔 𝟵𝟵% ) CPU Core i7, RAM
+              16GB, SSD 512GB</h5>
+            <h5 class="card-text">200$</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../images/ads/car2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">𝗥𝗲𝗱𝗺𝗶𝗕𝗼𝗼𝗸 𝗔𝗶𝗿 𝟭𝟯 𝟮𝟬𝟮𝟬 ( 𝗚𝗿𝗮𝗱𝗲 𝗔 𝟵𝟵% ) CPU Core i7, RAM
+              16GB, SSD 512GB</h5>
+            <h5 class="card-text">200$</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="detail-latest-ads-link">
+      <a href="" class="btn-view-all">View all</a>
+    </div>
+  </div>
+  <!-- list location -->
+
+  <div class="list-location mt-4">
+    <div class="header list-location-content">
+      <h2>Browse by Location</h2>
+      <ul class="list-unstyled">
+        <li>
+          <a href="#">Phnom Penh</a>
+        </li>
+        <li>
+          <a href="#">Kandal</a>
+        </li>
+        <li>
+          <a href="#">Stung Treng</a>
+        </li>
+        <li>
+          <a href="#">Pailin</a>
+        </li>
+        <li>
+          <a href="#">Kep</a>
+        </li>
+      </ul>
+      <ul class="list-unstyled">
+        <li>
+          <a href="#">Preah Sihanouk</a>
+        </li>
+        <li>
+          <a href="#">Tboung Khmum</a>
+        </li>
+        <li>
+          <a href="#">Ratanakiri</a>
+        </li>
+        <li>
+          <a href="#">Oddar Meanchey</a>
+        </li>
+        <li>
+          <a href="#">Kampot</a>
+        </li>
+      </ul>
+      <ul class="list-unstyled">
+        <li>
+          <a href="#">Kampong Cham</a>
+        </li>
+        <li>
+          <a href="#">Banteay Meanchey</a>
+        </li>
+        <li>
+          <a href="#">Pursat</a>
+        </li>
+        <li>
+          <a href="#">Mondolkiri</a>
+        </li>
+        <li>
+          <a href="#">Kampong Thom</a>
+        </li>
+      </ul>
+      <ul class="list-unstyled">
+        <li>
+          <a href="#">Siem Reap</a>
+        </li>
+        <li>
+          <a href="#">Takeo</a>
+        </li>
+        <li>
+          <a href="#">Prey Veng</a>
+        </li>
+        <li>
+          <a href="#">Kratie</a>
+        </li>
+        <li>
+          <a href="#">Kampong Spue</a>
+        </li>
+      </ul>
+      <ul class="list-unstyled">
+        <li>
+          <a href="#">Battambang</a>
+        </li>
+        <li>
+          <a href="#">Svay Rieng</a>
+        </li>
+        <li>
+          <a href="#">Preah Vihear</a>
+        </li>
+        <li>
+          <a href="#">Koh Kong</a>
+        </li>
+        <li>
+          <a href="#">Kampong Chhnang</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-light text-muted mt-5">
+    <section class="d-flex justify-content-center justify-content-lg-between bg-color">
+      <div class="me-4 d-none d-lg-block m-auto">
+        <img src="images/footer/footer.png" alt="" class="img-fluid" />
+      </div>
+    </section>
+    <section class="footer mt-0">
+      <div class="container text-center text-md-start">
+        <div class="row">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Follow Khmer24</h6>
+            <div class="media-content d-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ffff" class="bi bi-facebook"
+                viewBox="0 0 16 16">
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+              </svg>
+              <p>
+                <a class="text-reset media"> Facebook </a>
+              </p>
+            </div>
+            <div class="media-content d-flex">
+              <div class="circle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red"
+                  class="bi bi-youtube align-items-center" viewBox="0 0 16 16">
                   <path
-                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-                  />
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
                 </svg>
-                <p>
-                  <a class="text-reset media"> Facebook </a>
-                </p>
               </div>
-              <div class="media-content d-flex">
-                <div class="circle">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="red"
-                    class="bi bi-youtube align-items-center"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
-                    />
-                  </svg>
-                </div>
-                <p>
-                  <a class="text-reset media"> Youtube </a>
-                </p>
+              <p>
+                <a class="text-reset media"> Youtube </a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">About Khmer24</h6>
+            <p>
+              <a href="#!" class="text-reset">Contact Us</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">About us</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">MemberShip</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Promote Ad</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Private Policy</a>
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Useful Information</h6>
+            <p>
+              <a href="#!" class="text-reset">Safety Tip</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Ad Posting Rule</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              Download khmer24 app for FREE
+            </h6>
+            <div class="row">
+              <div class="col-6">
+                <img src="images/footer/qr.png" alt="" class="img-fluid" />
               </div>
-            </div>
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">About Khmer24</h6>
-              <p>
-                <a href="#!" class="text-reset">Contact Us</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">About us</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">MemberShip</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Promote Ad</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Private Policy</a>
-              </p>
-            </div>
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">Useful Information</h6>
-              <p>
-                <a href="#!" class="text-reset">Safety Tip</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Ad Posting Rule</a>
-              </p>
-            </div>
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">
-                Download khmer24 app for FREE
-              </h6>
-              <div class="row">
-                <div class="col-6">
-                  <img src="images/footer/qr.png" alt="" class="img-fluid" />
-                </div>
-                <div class="col-6">
-                  <img
-                    src="images/footer/appstore.png"
-                    alt=""
-                    class="img-fluid"
-                  />
-                  <img
-                    src="images/footer/playstore.png"
-                    alt=""
-                    class="img-fluid"
-                  />
-                  <img
-                    src="images/footer/appGallery.png"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </div>
+              <div class="col-6">
+                <img src="images/footer/appstore.png" alt="" class="img-fluid" />
+                <img src="images/footer/playstore.png" alt="" class="img-fluid" />
+                <img src="images/footer/appGallery.png" alt="" class="img-fluid" />
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- Copyright -->
-      <div
-        class="text-center p-3"
-        style="background-color: #069; border-top: 0.8px solid rgb(66, 66, 66)"
-      >
-        <a class="text-reset fw-bold">
-          Copyright ©2021 KHMER24 (Cambodia). All rights reserved.</a
-        >
       </div>
-    </footer>
+    </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: #069; border-top: 0.8px solid rgb(66, 66, 66)">
+      <a class="text-reset fw-bold">
+        Copyright ©2021 KHMER24 (Cambodia). All rights reserved.</a>
+    </div>
+  </footer>
 
-    <script>
-      // header
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
-      const courses = [
-        {
-          name: "Cars and Vechicles",
-          class: "main",
-        },
-        {
-          name: "Cars for Sale",
-          class: "child",
-        },
-        {
-          name: "Javascript",
-          class: "child",
-        },
-        {
-          name: "Bicycles",
-          class: "child",
-        },
-        {
-          name: "Motorcycles for Sale",
-          class: "main",
-        },
-        {
-          name: "Vehicles for sale",
-          class: "child",
-        },
-        {
-          name: "Javascript",
-          class: "child",
-        },
-        {
-          name: "CSS",
-          class: "child",
-        },
-        {
-          name: "Javascript",
-          class: "child",
-        },
-      ];
-      const select = document.getElementById("courseSelect");
+  <script>
+    // header
 
-      courses.forEach((course) => {
-        const option = document.createElement("option");
-        option.className = course.class;
-        option.value = course.name;
-        option.text = course.name;
-        select.appendChild(option);
-      });
+    const courses = [
+      {
+        name: "Cars and Vechicles",
+        class: "main",
+      },
+      {
+        name: "Cars for Sale",
+        class: "child",
+      },
+      {
+        name: "Javascript",
+        class: "child",
+      },
+      {
+        name: "Bicycles",
+        class: "child",
+      },
+      {
+        name: "Motorcycles for Sale",
+        class: "main",
+      },
+      {
+        name: "Vehicles for sale",
+        class: "child",
+      },
+      {
+        name: "Javascript",
+        class: "child",
+      },
+      {
+        name: "CSS",
+        class: "child",
+      },
+      {
+        name: "Javascript",
+        class: "child",
+      },
+    ];
+    const select = document.getElementById("courseSelect");
 
-      //list categories
+    courses.forEach((course) => {
+      const option = document.createElement("option");
+      option.className = course.class;
+      option.value = course.name;
+      option.text = course.name;
+      select.appendChild(option);
+    });
 
-      var categories = [
-        {
-          name: "Popular categories",
-          icon: "bi bi-heart",
-          subcategories: [
-            {
-              name: "House & Lands",
-              image:
-                "https://www.pinuphouses.com/wp-content/uploads/off-grid-small-house-plans.png",
-            },
-            {
-              name: "Cars for sale",
-              image:
-                "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/eqe-sedan/all-vehicles/2023-EQE350-SEDAN-AVP-DR.png",
-            },
-            {
-              name: "Motorcycles for Sale",
-              image:
-                "https://a.storyblok.com/f/176629/3000x2000/cc92b2aaa5/700cl-x_sport_grey.png",
-            },
-            {
-              name: "Phones & Tablets",
-              image:
-                "https://images.dailyobjects.com/marche/product-images/1101/dailyobjects-captain-star-icon-black-hybrid-clear-case-cover-for-iphone-15-plus-images/DailyObjects-Captain-Star-Icon-Black-Hybrid-Clear-Case-Cover-For-iPhone-15-Plus.png?tr=cm-pad_resize,v-2,w-412,h-490,dpr-2,q-60",
-            },
-            {
-              name: "Accessories",
-              image:
-                "https://www.redragonzone.com/cdn/shop/products/H520-1_1024x1024@2x.png?v=1621822416",
-            },
-            {
-              name: "Phone Numbers",
-              image:
-                "https://freepngimg.com/save/17191-sim-card-png-file/1000x600",
-            },
-            {
-              name: "Computers & Accessories",
-              image:
-                "https://cdn.pixabay.com/photo/2012/04/13/17/00/lcd-32872_1280.png",
-            },
-            {
-              name: "Parts & Accessories",
-              image:
-                "https://resource.logitechg.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/refreshed-g203/g203-black-gallery-1.png?v=1",
-            },
-            {
-              name: "Cameras, camcorders",
-              image:
-                "https://media.croma.com/image/upload/v1686892279/Croma%20Assets/Imaging/Camera%20and%20Camcorders/Images/267967_0_hr8uwe.png",
-            },
-            {
-              name: "TVs, Videos and audios",
-              image:
-                "https://instorestatic.tcl.com/media/catalog/product/s/5/s53_front-1_3.png",
-            },
-            {
-              name: "Home appliances",
-              image:
-                "https://www.kent.co.in/images/kitchen-appliances/Kitchen-Appliances-Category-Page-Banner.png",
-            },
-            {
-              name: "Women's Fashion",
-              image:
-                "https://i5.walmartimages.com/asr/2282eec7-7dbf-4ce0-b770-53a0b112e68f.7c0dd7238ef99abb2ca41232aa839e9c.png?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
-            },
-            {
-              name: "Men's Fashion",
-              image:
-                "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ML763_VW_34FR+watch-case-45-stainless-gold-s9_VW_34FR+watch-face-45-stainless-gold-s9_VW_34FR?wid=2000&hei=2000&fmt=png-alpha&.v=1694507905569",
-            },
-            {
-              name: "Beauty & Healthcare",
-              image:
-                "https://cdn5.vectorstock.com/i/1000x1000/09/09/makeup-cosmetics-woman-make-up-skincare-accessory-vector-17050909.jpg",
-            },
-            {
-              name: "Sports Equipment",
-              image:
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Basketball.png/220px-Basketball.png",
-            },
-            {
-              name: "Funiture & Decor",
-              image:
-                "https://szhomestylefurniture.com/wp-content/uploads/2022/09/Home-Decor.png",
-            },
-            {
-              name: "Jobs",
-              image: "https://cdn-icons-png.flaticon.com/512/2936/2936630.png",
-            },
-            {
-              name: "Pets",
-              image:
-                "https://autumntrailsvet.com/wp-content/uploads/2020/04/We-care-for-many-kinds-of-animals.png",
-            },
-            {
-              name: "Foods",
-              image:
-                "https://images.ctfassets.net/grb5fvwhwnyo/1sJpRsfp1RJI3AASMiOS1h/d5cca0a1c5d78df3052659f2b56a1225/SEO-Food-Fresh-Groceries.png",
-            },
-          ],
-        },
-        {
-          name: "Cars and Vehicles",
-          icon: "bi bi-car-front-fill",
-          subcategories: [
-            {
-              name: "Cars for sale",
-              image: "",
-            },
-            {
-              name: "Bicycles",
-              image: "",
-            },
-            {
-              name: "Motorcycles for sale",
-              image: "",
-            },
-            {
-              name: "Vehicles for rent",
-              image: "",
-            },
-            {
-              name: "Maintenance & Repair",
-              image: "",
-            },
-            {
-              name: "Lorries, Vans & Tractors",
-              image: "",
-            },
-            {
-              name: "Financing & Insurance",
-              image: "",
-            },
-            {
-              name: "Tuk tuk & remork",
-              image: "",
-            },
-            {
-              name: "Parts & Accessories",
-              image: "",
-            },
-            {
-              name: "Other",
-              image: "",
-            },
-          ],
-        },
-        {
-          name: "Phones & Tablets",
-          icon: "bi bi-phone",
-          subcategories: [
-            {
-              name: "Phones",
-              image: "",
-            },
-            {
-              name: "Tablets",
-              image: "",
-            },
-            {
-              name: "Smart Watches ",
-              image: "",
-            },
-            {
-              name: "Accessories",
-              image: "",
-            },
-            {
-              name: "Phone Numbers",
-              image: "",
-            },
-          ],
-        },
-        {
-          name: "Computers & Accessories",
-          icon: "bi bi-laptop",
-          subcategories: [
-            {
-              name: "Laptops",
-              image: "",
-            },
-            {
-              name: "Desktops",
-              image: "",
-            },
-            {
-              name: "All-in-One",
-              image: "",
-            },
-            {
-              name: "Monitors",
-              image: "",
-            },
-            {
-              name: "Printers & Scanners",
-              image: "",
-            },
-            {
-              name: "Parts & Accessories",
-              image: "",
-            },
-            {
-              name: "Softwares",
-              image: "",
-            },
-          ],
-        },
-        {
-          name: "Electronics",
-          icon: "bi bi-display",
-          subcategories: [
-            {
-              name: "Washing",
-              image: "",
-            },
-            {
-              name: "Fridges & Freezers",
-              image: "",
-            },
-            {
-              name: "Air Conditioning & Heating",
-              image: "",
-            },
-            {
-              name: "Tools",
-              image: "",
-            },
-            {
-              name: "Machinery",
-              image: "",
-            },
-            {
-              name: "Consumer Electronics",
-              image: "",
-            },
-            {
-              name: "Security Camera",
-              image: "",
-            },
-            {
-              name: "Lighting",
-              image: "",
-            },
-            {
-              name: "Cameras, Camcorders",
-              image: "",
-            },
-            {
-              name: "TVs, videos and audios",
-              image: "",
-            },
-            {
-              name: "Home appliances",
-              image: "",
-            },
-            {
-              name: "Video games, consoles toys",
-              image: "",
-            },
-          ],
-        },
-        {
-          name: "House & Lands",
-          icon: "bi bi-house",
-          subcategories: [
-            {
-              name: "House for sale",
-              image: "",
-            },
-            {
-              name: "House for rent",
-              image: "",
-            },
-            {
-              name: "phone",
-              image: "",
-            },
-            {
-              name: "Condo for sale",
-              image: "",
-            },
-            {
-              name: "Apartment for rent",
-              image: "",
-            },
-            {
-              name: "Land for sale",
-              image: "",
-            },
-            {
-              name: "Land for rent",
-              image: "",
-            },
-            {
-              name: "Commercial for sale",
-              image: "",
-            },
-            {
-              name: "Commercial for rent",
-              image: "",
-            },
-            {
-              name: "Room for rent",
-              image: "",
-            },
-            {
-              name: "Properties Wanted",
-              image: "",
-            },
-            {
-              name: "Agent Services",
-              image: "",
-            },
-            {
-              name: "Others",
-              image: "",
-            },
-          ],
-        },
-        {
-          name: "Jobs",
-          icon: "bi bi-briefcase",
-          subcategories: [
-            {
-              name: "Accounting",
-              image: "",
-            },
-            {
-              name: "Administration",
-              image: "",
-            },
-            {
-              name: "Architecture/Engineering",
-              image: "",
-            },
-            {
-              name: "Assistant/Secretary",
-              image: "",
-            },
-            {
-              name: "Audit/Taxation",
-              image: "",
-            },
-            {
-              name: "Banking/Insurance",
-              image: "",
-            },
-            {
-              name: "Cashier/Receptionist",
-              image: "",
-            },
-            {
-              name: "Catering/Restaurant",
-              image: "",
-            },
-            {
-              name: "Cleaner/Maid",
-              image: "",
-            },
-            {
-              name: "Consultancy",
-              image: "",
-            },
-            {
-              name: "Customer Service",
-              image: "",
-            },
-            {
-              name: "Design",
-              image: "",
-            },
-            {
-              name: "Education/Training",
-              image: "",
-            },
-            {
-              name: "Finance",
-              image: "",
-            },
-            {
-              name: "Freight/Shipping",
-              image: "",
-            },
-            {
-              name: "Hotel/Hospitality",
-              image: "",
-            },
-            {
-              name: "Human Resource",
-              image: "",
-            },
-            {
-              name: "Information Technology",
-              image: "",
-            },
-            {
-              name: "Lawyer/Legal Service",
-              image: "",
-            },
-            {
-              name: "Management",
-              image: "",
-            },
-            {
-              name: "Manufacturing",
-              image: "",
-            },
-            {
-              name: "Marketing",
-              image: "",
-            },
-            {
-              name: "Media/Advertising",
-              image: "",
-            },
-            {
-              name: "Medical/Health/Nursing",
-              image: "",
-            },
-            {
-              name: "Merchandising/Purchasing",
-              image: "",
-            },
-            {
-              name: "Operations",
-              image: "",
-            },
-            {
-              name: "Project Management",
-              image: "",
-            },
-            {
-              name: "Quality Control",
-              image: "",
-            },
-            {
-              name: "Resort/Casino",
-              image: "",
-            },
-            {
-              name: "Sales",
-              image: "",
-            },
-            {
-              name: "Security/Driver",
-              image: "",
-            },
-            {
-              name: "Technician",
-              image: "",
-            },
-            {
-              name: "Telecommunication",
-              image: "",
-            },
-            {
-              name: "Translation/Interpretation",
-              image: "",
-            },
-            {
-              name: "Travel Agent/Ticket Sales",
-              image: "",
-            },
-            {
-              name: "Others",
-              image: "",
-            },
-          ],
-        },
-        {
-          name: "Services",
-          icon: "bi bi-wrench-adjustable",
-          subcategories: [
-            {
-              name: "Acconting",
-              image: "",
-            },
-            {
-              name: "Financial Services",
-              image: "",
-            },
-            {
-              name: "Travel & Tourism",
-              image: "",
-            },
-            {
-              name: "Automotive",
-              image: "",
-            },
-            {
-              name: "Advertising & Media",
-              image: "",
-            },
-            {
-              name: "Bridal Services",
-              image: "",
-            },
-            {
-              name: "Cleaning & Maid Services",
-              image: "",
-            },
-            {
-              name: "Construction, Arch & Interiors",
-              image: "",
-            },
-            {
-              name: "Education & Training",
-              image: "",
-            },
-            {
-              name: "Engineering",
-              image: "",
-            },
-            {
-              name: "Insurance",
-              image: "",
-            },
-            {
-              name: "Massage & Spa",
-              image: "",
-            },
-            {
-              name: "Hospitality, Travel & Tourism",
-              image: "",
-            },
-            {
-              name: "IT & Telecom",
-              image: "",
-            },
-            {
-              name: "Interior Design & Renovation",
-              image: "",
-            },
-            {
-              name: "Legal",
-              image: "",
-            },
-            {
-              name: "Movers & Logistics",
-              image: "",
-            },
-            {
-              name: "Plumbing & Electrical",
-              image: "",
-            },
-            {
-              name: "Property & Real Estate",
-              image: "",
-            },
-            {
-              name: "Science",
-              image: "",
-            },
-            {
-              name: "Supply Chain & logistic",
-              image: "",
-            },
-            {
-              name: "Printing & Publishing",
-              image: "",
-            },
-            {
-              name: "Other Services",
-              image: "",
-            },
-          ],
-        },
-        {
-          name: "Fashion & Beauty",
-          icon: "bi bi-eyeglasses",
-          subcategories: [
-            {
-              name: "Women's Fashion",
-              image: "",
-            },
-            {
-              name: "Men's Fashion",
-              image: "",
-            },
-            {
-              name: "Bady & kids",
-              image: "",
-            },
-            {
-              name: "Travel and Luggage",
-              image: "",
-            },
-            {
-              name: "Fashion Accessories",
-              image: "",
-            },
-            {
-              name: "Beauty & Healthcare",
-              image: "",
-            },
-          ],
-        },
-        {
-          name: "Furniture & Decor",
-          icon: "bi bi-door-closed",
-          subcategories: [
-            {
-              name: "Tablets & Desks",
-              image: "",
-            },
-            {
-              name: "Chairs & Sofas",
-              image: "",
-            },
-            {
-              name: "Wardrobes & Cabinets",
-              image: "",
-            },
-            {
-              name: "Shelves & Drawers",
-              image: "",
-            },
-            {
-              name: "Beds & Mattresses",
-              image: "",
-            },
-            {
-              name: "Curtain & Carpet",
-              image: "",
-            },
-            {
-              name: "Other Funiture",
-              image: "",
-            },
-            {
-              name: "Kitchenware",
-              image: "",
-            },
-            {
-              name: "Household Items",
-              image: "",
-            },
-            {
-              name: "Handicrafts Paintings",
-              image: "",
-            },
-          ],
-        },
-        {
-          name: "Books, Sports & Hobbies",
-          icon: "bi bi-book",
-          subcategories: [
-            {
-              name: "Musical Instruments",
-              image: "",
-            },
-            {
-              name: "Fishing",
-              image: "",
-            },
-            {
-              name: "Hike & Camp",
-              image: "",
-            },
-            {
-              name: "CDS, DVDS, VHS",
-              image: "",
-            },
-            {
-              name: "Books",
-              image: "",
-            },
-            {
-              name: "Sports Equipment",
-              image: "",
-            },
-            {
-              name: "Other",
-              image: "",
-            },
-          ],
-        },
-        {
-          name: "Pets",
-          icon: "bi bi-twitter",
-          subcategories: [
-            {
-              name: "Dogs",
-              image: "",
-            },
-            {
-              name: "Cats",
-              image: "",
-            },
-            {
-              name: "Birds",
-              image: "",
-            },
-            {
-              name: "Fish",
-              image: "",
-            },
-            {
-              name: "Pet Food",
-              image: "",
-            },
-            {
-              name: "Pet Accessories",
-              image: "",
-            },
-            {
-              name: "Other",
-              image: "",
-            },
-          ],
-        },
-        {
-          name: "Foods",
-          icon: "bi bi-egg",
-          subcategories: [
-            {
-              name: "Meats",
-            },
-            {
-              name: "Seafood",
-            },
-            {
-              name: "Fruit",
-            },
-            {
-              name: "Vegetables",
-            },
-            {
-              name: "Grocery",
-            },
-            {
-              name: "Bread & Bakery",
-            },
-            {
-              name: "Beer & Wine",
-            },
-            {
-              name: "Rice & Cereal",
-            },
-            {
-              name: "Other",
-            },
-          ],
-        },
-      ];
+    //list categories
 
-      buildList(categories);
-      function buildList(data) {
-        var linkList = document.getElementById("listId");
-        for (var i = 0; i < data.length; i++) {
-          var category = data[i];
+    var categories = [
+      {
+        name: "Popular categories",
+        icon: "bi bi-heart",
+        subcategories: [
+          {
+            name: "House & Lands",
+            image:
+              "https://www.pinuphouses.com/wp-content/uploads/off-grid-small-house-plans.png",
+          },
+          {
+            name: "Cars for sale",
+            image:
+              "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/eqe-sedan/all-vehicles/2023-EQE350-SEDAN-AVP-DR.png",
+          },
+          {
+            name: "Motorcycles for Sale",
+            image:
+              "https://a.storyblok.com/f/176629/3000x2000/cc92b2aaa5/700cl-x_sport_grey.png",
+          },
+          {
+            name: "Phones & Tablets",
+            image:
+              "https://images.dailyobjects.com/marche/product-images/1101/dailyobjects-captain-star-icon-black-hybrid-clear-case-cover-for-iphone-15-plus-images/DailyObjects-Captain-Star-Icon-Black-Hybrid-Clear-Case-Cover-For-iPhone-15-Plus.png?tr=cm-pad_resize,v-2,w-412,h-490,dpr-2,q-60",
+          },
+          {
+            name: "Accessories",
+            image:
+              "https://www.redragonzone.com/cdn/shop/products/H520-1_1024x1024@2x.png?v=1621822416",
+          },
+          {
+            name: "Phone Numbers",
+            image:
+              "https://freepngimg.com/save/17191-sim-card-png-file/1000x600",
+          },
+          {
+            name: "Computers & Accessories",
+            image:
+              "https://cdn.pixabay.com/photo/2012/04/13/17/00/lcd-32872_1280.png",
+          },
+          {
+            name: "Parts & Accessories",
+            image:
+              "https://resource.logitechg.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/refreshed-g203/g203-black-gallery-1.png?v=1",
+          },
+          {
+            name: "Cameras, camcorders",
+            image:
+              "https://media.croma.com/image/upload/v1686892279/Croma%20Assets/Imaging/Camera%20and%20Camcorders/Images/267967_0_hr8uwe.png",
+          },
+          {
+            name: "TVs, Videos and audios",
+            image:
+              "https://instorestatic.tcl.com/media/catalog/product/s/5/s53_front-1_3.png",
+          },
+          {
+            name: "Home appliances",
+            image:
+              "https://www.kent.co.in/images/kitchen-appliances/Kitchen-Appliances-Category-Page-Banner.png",
+          },
+          {
+            name: "Women's Fashion",
+            image:
+              "https://i5.walmartimages.com/asr/2282eec7-7dbf-4ce0-b770-53a0b112e68f.7c0dd7238ef99abb2ca41232aa839e9c.png?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
+          },
+          {
+            name: "Men's Fashion",
+            image:
+              "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ML763_VW_34FR+watch-case-45-stainless-gold-s9_VW_34FR+watch-face-45-stainless-gold-s9_VW_34FR?wid=2000&hei=2000&fmt=png-alpha&.v=1694507905569",
+          },
+          {
+            name: "Beauty & Healthcare",
+            image:
+              "https://cdn5.vectorstock.com/i/1000x1000/09/09/makeup-cosmetics-woman-make-up-skincare-accessory-vector-17050909.jpg",
+          },
+          {
+            name: "Sports Equipment",
+            image:
+              "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Basketball.png/220px-Basketball.png",
+          },
+          {
+            name: "Funiture & Decor",
+            image:
+              "https://szhomestylefurniture.com/wp-content/uploads/2022/09/Home-Decor.png",
+          },
+          {
+            name: "Jobs",
+            image: "https://cdn-icons-png.flaticon.com/512/2936/2936630.png",
+          },
+          {
+            name: "Pets",
+            image:
+              "https://autumntrailsvet.com/wp-content/uploads/2020/04/We-care-for-many-kinds-of-animals.png",
+          },
+          {
+            name: "Foods",
+            image:
+              "https://images.ctfassets.net/grb5fvwhwnyo/1sJpRsfp1RJI3AASMiOS1h/d5cca0a1c5d78df3052659f2b56a1225/SEO-Food-Fresh-Groceries.png",
+          },
+        ],
+      },
+      {
+        name: "Cars and Vehicles",
+        icon: "bi bi-car-front-fill",
+        subcategories: [
+          {
+            name: "Cars for sale",
+            image: "",
+          },
+          {
+            name: "Bicycles",
+            image: "",
+          },
+          {
+            name: "Motorcycles for sale",
+            image: "",
+          },
+          {
+            name: "Vehicles for rent",
+            image: "",
+          },
+          {
+            name: "Maintenance & Repair",
+            image: "",
+          },
+          {
+            name: "Lorries, Vans & Tractors",
+            image: "",
+          },
+          {
+            name: "Financing & Insurance",
+            image: "",
+          },
+          {
+            name: "Tuk tuk & remork",
+            image: "",
+          },
+          {
+            name: "Parts & Accessories",
+            image: "",
+          },
+          {
+            name: "Other",
+            image: "",
+          },
+        ],
+      },
+      {
+        name: "Phones & Tablets",
+        icon: "bi bi-phone",
+        subcategories: [
+          {
+            name: "Phones",
+            image: "",
+          },
+          {
+            name: "Tablets",
+            image: "",
+          },
+          {
+            name: "Smart Watches ",
+            image: "",
+          },
+          {
+            name: "Accessories",
+            image: "",
+          },
+          {
+            name: "Phone Numbers",
+            image: "",
+          },
+        ],
+      },
+      {
+        name: "Computers & Accessories",
+        icon: "bi bi-laptop",
+        subcategories: [
+          {
+            name: "Laptops",
+            image: "",
+          },
+          {
+            name: "Desktops",
+            image: "",
+          },
+          {
+            name: "All-in-One",
+            image: "",
+          },
+          {
+            name: "Monitors",
+            image: "",
+          },
+          {
+            name: "Printers & Scanners",
+            image: "",
+          },
+          {
+            name: "Parts & Accessories",
+            image: "",
+          },
+          {
+            name: "Softwares",
+            image: "",
+          },
+        ],
+      },
+      {
+        name: "Electronics",
+        icon: "bi bi-display",
+        subcategories: [
+          {
+            name: "Washing",
+            image: "",
+          },
+          {
+            name: "Fridges & Freezers",
+            image: "",
+          },
+          {
+            name: "Air Conditioning & Heating",
+            image: "",
+          },
+          {
+            name: "Tools",
+            image: "",
+          },
+          {
+            name: "Machinery",
+            image: "",
+          },
+          {
+            name: "Consumer Electronics",
+            image: "",
+          },
+          {
+            name: "Security Camera",
+            image: "",
+          },
+          {
+            name: "Lighting",
+            image: "",
+          },
+          {
+            name: "Cameras, Camcorders",
+            image: "",
+          },
+          {
+            name: "TVs, videos and audios",
+            image: "",
+          },
+          {
+            name: "Home appliances",
+            image: "",
+          },
+          {
+            name: "Video games, consoles toys",
+            image: "",
+          },
+        ],
+      },
+      {
+        name: "House & Lands",
+        icon: "bi bi-house",
+        subcategories: [
+          {
+            name: "House for sale",
+            image: "",
+          },
+          {
+            name: "House for rent",
+            image: "",
+          },
+          {
+            name: "phone",
+            image: "",
+          },
+          {
+            name: "Condo for sale",
+            image: "",
+          },
+          {
+            name: "Apartment for rent",
+            image: "",
+          },
+          {
+            name: "Land for sale",
+            image: "",
+          },
+          {
+            name: "Land for rent",
+            image: "",
+          },
+          {
+            name: "Commercial for sale",
+            image: "",
+          },
+          {
+            name: "Commercial for rent",
+            image: "",
+          },
+          {
+            name: "Room for rent",
+            image: "",
+          },
+          {
+            name: "Properties Wanted",
+            image: "",
+          },
+          {
+            name: "Agent Services",
+            image: "",
+          },
+          {
+            name: "Others",
+            image: "",
+          },
+        ],
+      },
+      {
+        name: "Jobs",
+        icon: "bi bi-briefcase",
+        subcategories: [
+          {
+            name: "Accounting",
+            image: "",
+          },
+          {
+            name: "Administration",
+            image: "",
+          },
+          {
+            name: "Architecture/Engineering",
+            image: "",
+          },
+          {
+            name: "Assistant/Secretary",
+            image: "",
+          },
+          {
+            name: "Audit/Taxation",
+            image: "",
+          },
+          {
+            name: "Banking/Insurance",
+            image: "",
+          },
+          {
+            name: "Cashier/Receptionist",
+            image: "",
+          },
+          {
+            name: "Catering/Restaurant",
+            image: "",
+          },
+          {
+            name: "Cleaner/Maid",
+            image: "",
+          },
+          {
+            name: "Consultancy",
+            image: "",
+          },
+          {
+            name: "Customer Service",
+            image: "",
+          },
+          {
+            name: "Design",
+            image: "",
+          },
+          {
+            name: "Education/Training",
+            image: "",
+          },
+          {
+            name: "Finance",
+            image: "",
+          },
+          {
+            name: "Freight/Shipping",
+            image: "",
+          },
+          {
+            name: "Hotel/Hospitality",
+            image: "",
+          },
+          {
+            name: "Human Resource",
+            image: "",
+          },
+          {
+            name: "Information Technology",
+            image: "",
+          },
+          {
+            name: "Lawyer/Legal Service",
+            image: "",
+          },
+          {
+            name: "Management",
+            image: "",
+          },
+          {
+            name: "Manufacturing",
+            image: "",
+          },
+          {
+            name: "Marketing",
+            image: "",
+          },
+          {
+            name: "Media/Advertising",
+            image: "",
+          },
+          {
+            name: "Medical/Health/Nursing",
+            image: "",
+          },
+          {
+            name: "Merchandising/Purchasing",
+            image: "",
+          },
+          {
+            name: "Operations",
+            image: "",
+          },
+          {
+            name: "Project Management",
+            image: "",
+          },
+          {
+            name: "Quality Control",
+            image: "",
+          },
+          {
+            name: "Resort/Casino",
+            image: "",
+          },
+          {
+            name: "Sales",
+            image: "",
+          },
+          {
+            name: "Security/Driver",
+            image: "",
+          },
+          {
+            name: "Technician",
+            image: "",
+          },
+          {
+            name: "Telecommunication",
+            image: "",
+          },
+          {
+            name: "Translation/Interpretation",
+            image: "",
+          },
+          {
+            name: "Travel Agent/Ticket Sales",
+            image: "",
+          },
+          {
+            name: "Others",
+            image: "",
+          },
+        ],
+      },
+      {
+        name: "Services",
+        icon: "bi bi-wrench-adjustable",
+        subcategories: [
+          {
+            name: "Acconting",
+            image: "",
+          },
+          {
+            name: "Financial Services",
+            image: "",
+          },
+          {
+            name: "Travel & Tourism",
+            image: "",
+          },
+          {
+            name: "Automotive",
+            image: "",
+          },
+          {
+            name: "Advertising & Media",
+            image: "",
+          },
+          {
+            name: "Bridal Services",
+            image: "",
+          },
+          {
+            name: "Cleaning & Maid Services",
+            image: "",
+          },
+          {
+            name: "Construction, Arch & Interiors",
+            image: "",
+          },
+          {
+            name: "Education & Training",
+            image: "",
+          },
+          {
+            name: "Engineering",
+            image: "",
+          },
+          {
+            name: "Insurance",
+            image: "",
+          },
+          {
+            name: "Massage & Spa",
+            image: "",
+          },
+          {
+            name: "Hospitality, Travel & Tourism",
+            image: "",
+          },
+          {
+            name: "IT & Telecom",
+            image: "",
+          },
+          {
+            name: "Interior Design & Renovation",
+            image: "",
+          },
+          {
+            name: "Legal",
+            image: "",
+          },
+          {
+            name: "Movers & Logistics",
+            image: "",
+          },
+          {
+            name: "Plumbing & Electrical",
+            image: "",
+          },
+          {
+            name: "Property & Real Estate",
+            image: "",
+          },
+          {
+            name: "Science",
+            image: "",
+          },
+          {
+            name: "Supply Chain & logistic",
+            image: "",
+          },
+          {
+            name: "Printing & Publishing",
+            image: "",
+          },
+          {
+            name: "Other Services",
+            image: "",
+          },
+        ],
+      },
+      {
+        name: "Fashion & Beauty",
+        icon: "bi bi-eyeglasses",
+        subcategories: [
+          {
+            name: "Women's Fashion",
+            image: "",
+          },
+          {
+            name: "Men's Fashion",
+            image: "",
+          },
+          {
+            name: "Bady & kids",
+            image: "",
+          },
+          {
+            name: "Travel and Luggage",
+            image: "",
+          },
+          {
+            name: "Fashion Accessories",
+            image: "",
+          },
+          {
+            name: "Beauty & Healthcare",
+            image: "",
+          },
+        ],
+      },
+      {
+        name: "Furniture & Decor",
+        icon: "bi bi-door-closed",
+        subcategories: [
+          {
+            name: "Tablets & Desks",
+            image: "",
+          },
+          {
+            name: "Chairs & Sofas",
+            image: "",
+          },
+          {
+            name: "Wardrobes & Cabinets",
+            image: "",
+          },
+          {
+            name: "Shelves & Drawers",
+            image: "",
+          },
+          {
+            name: "Beds & Mattresses",
+            image: "",
+          },
+          {
+            name: "Curtain & Carpet",
+            image: "",
+          },
+          {
+            name: "Other Funiture",
+            image: "",
+          },
+          {
+            name: "Kitchenware",
+            image: "",
+          },
+          {
+            name: "Household Items",
+            image: "",
+          },
+          {
+            name: "Handicrafts Paintings",
+            image: "",
+          },
+        ],
+      },
+      {
+        name: "Books, Sports & Hobbies",
+        icon: "bi bi-book",
+        subcategories: [
+          {
+            name: "Musical Instruments",
+            image: "",
+          },
+          {
+            name: "Fishing",
+            image: "",
+          },
+          {
+            name: "Hike & Camp",
+            image: "",
+          },
+          {
+            name: "CDS, DVDS, VHS",
+            image: "",
+          },
+          {
+            name: "Books",
+            image: "",
+          },
+          {
+            name: "Sports Equipment",
+            image: "",
+          },
+          {
+            name: "Other",
+            image: "",
+          },
+        ],
+      },
+      {
+        name: "Pets",
+        icon: "bi bi-twitter",
+        subcategories: [
+          {
+            name: "Dogs",
+            image: "",
+          },
+          {
+            name: "Cats",
+            image: "",
+          },
+          {
+            name: "Birds",
+            image: "",
+          },
+          {
+            name: "Fish",
+            image: "",
+          },
+          {
+            name: "Pet Food",
+            image: "",
+          },
+          {
+            name: "Pet Accessories",
+            image: "",
+          },
+          {
+            name: "Other",
+            image: "",
+          },
+        ],
+      },
+      {
+        name: "Foods",
+        icon: "bi bi-egg",
+        subcategories: [
+          {
+            name: "Meats",
+          },
+          {
+            name: "Seafood",
+          },
+          {
+            name: "Fruit",
+          },
+          {
+            name: "Vegetables",
+          },
+          {
+            name: "Grocery",
+          },
+          {
+            name: "Bread & Bakery",
+          },
+          {
+            name: "Beer & Wine",
+          },
+          {
+            name: "Rice & Cereal",
+          },
+          {
+            name: "Other",
+          },
+        ],
+      },
+    ];
 
-          var txt = `
+    buildList(categories);
+    function buildList(data) {
+      var linkList = document.getElementById("listId");
+      for (var i = 0; i < data.length; i++) {
+        var category = data[i];
+
+        var txt = `
             <a
                   class="list-group-item list-group-item-action"
                   id="list-home-list"
@@ -1159,19 +1243,19 @@
                   ><i class="${category.icon} px-2"></i>${category.name} </a
                 >
             `;
-          linkList.innerHTML += txt;
-        }
+        linkList.innerHTML += txt;
       }
+    }
 
-      function handleOnHover(cateIndex) {
-        console.log(cateIndex);
-        var linkList = document.getElementById("nav-tabContent");
-        var subcategories = categories[cateIndex].subcategories;
-        for (var j = 0; j < subcategories.length; j++) {
-          var name = subcategories[j].name;
-          var image = subcategories[j].image;
+    function handleOnHover(cateIndex) {
+      console.log(cateIndex);
+      var linkList = document.getElementById("nav-tabContent");
+      var subcategories = categories[cateIndex].subcategories;
+      for (var j = 0; j < subcategories.length; j++) {
+        var name = subcategories[j].name;
+        var image = subcategories[j].image;
 
-          var txt = ` <div
+        var txt = ` <div
                   class="tab-pane col-3 text-center py-2 fade show active"
                   id="list-home"
                   role="tabpanel"
@@ -1186,14 +1270,15 @@
                ${name}
                 </div>`;
 
-          linkList.innerHTML += txt;
-        }
+        linkList.innerHTML += txt;
       }
+    }
 
-      function handleMouseOut() {
-        var linkList = document.getElementById("nav-tabContent");
-        linkList.innerHTML = "";
-      }
-    </script>
-  </body>
+    function handleMouseOut() {
+      var linkList = document.getElementById("nav-tabContent");
+      linkList.innerHTML = "";
+    }
+  </script>
+</body>
+
 </html>

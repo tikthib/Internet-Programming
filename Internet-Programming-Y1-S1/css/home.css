@@ -84,8 +84,73 @@ input::placeholder{
 }
 
 
+/* latest ads */
+
+.latest{
+    width: 76%;
+    margin: auto;
+}
+h5.card-text{
+    color: red;
+    
+}
+h5.card-text,.card-title{
+    font-size: 18px;
+}
+.detail-latest-ads-link {
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.detail-latest-ads-link a.btn-view-all{
+    background-color: #0096de;
+    width: 90%;
+    padding: 7px;
+    color: white !important;
+    border: none;
+    font-size: 20px;
+    border-radius: 7px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* list category */
 
 
+.list-location{
+    height: 190px;
+    width: 75%;
+    margin: auto;
+    background-color: white;
+}
+.header h2{
+    letter-spacing: -1px;
+    font-size: 18px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.list-location-content{
+    width: 95%;
+    margin: auto;
+}
+.list-unstyled{
+    font-size: 14px;
+}
+ul.list-unstyled{
+    float: left;
+    width: 20%;
+}
+a{
+    color: #396ea3 !important;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+a:hover{
+    text-decoration: underline;
+}
 
 /* footer */
 
@@ -152,6 +217,11 @@ svg.bi.bi-youtube{
     .nav-item{
         padding: 8px 10px ;
     }
+
+    /* lates */
+    h5.card-text,.card-title{
+        font-size: 16px;
+    
     
 }
 
@@ -189,7 +259,12 @@ svg.bi.bi-youtube{
     .bi-search{
         font-size: .7rem;
     }
+    /* lates */
+    h5.card-text,.card-title{
+        font-size: 14px;
+    }
 }
+
 
 
 @media only screen and (max-width: 992px){
@@ -224,4 +299,4 @@ svg.bi.bi-youtube{
         margin-left: 0 !important;
         text-align: center!important;
     }
-}
+}}

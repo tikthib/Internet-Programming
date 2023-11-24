@@ -1,0 +1,134 @@
+header{
+    z-index:99;
+    position:relative;
+    box-shadow:0 1px 3px rgb(0 0 0/10%);
+    border-bottom:1px solid #cfcfcf!important
+}
+header .nav-link{
+    font-weight:600!important;
+    position:relative
+}
+header a .nav-link{
+    color:#006da1
+}
+header .nav .nav-user-photo a{
+    padding-top:3px;
+    padding-bottom:0
+}
+header .nav .nav-user-photo .dropdown-menu a{
+    padding-top:8px;
+    padding-bottom:8px;
+    color:#333;
+    min-width:220px;
+    font-weight:600
+}
+header .nav .nav-user-photo .dropdown-menu a span{
+    display:inline-block;
+    margin-right:8px;
+    color:#555;
+    font-size:22px;
+    vertical-align:text-bottom
+}
+header .nav .nav-user-photo .dropdown-menu a:hover,header .nav .nav-user-photo .dropdown-menu a:hover span{
+    color:#006da1
+}
+header .nav .nav-user-photo .dropdown-menu a:active,header .nav .nav-user-photo .dropdown-menu a:active span{
+    color:#fff;
+    background:#006da1
+}
+.active {
+    color:#fff;
+    background:#006da1
+}
+header .nav .nav-user-photo .icon-user-photo{
+    display:inline-block;
+    height:32px;
+    width:32px;
+    border-radius:50%;
+    overflow:hidden;
+    box-shadow:0 0 1px 1px rgba(0,0,0,
+    .1)
+}
+header .nav .nav-user-photo a:hover .icon-user-photo{
+    box-shadow:0 0 1px 1px rgba(0,0,0,.5)
+}
+header .nav-item-login>a>.badge,header .nav-item-login>.dropdown>.badge{
+    position:absolute;
+    right:5px;
+    top:0
+}
+header .dropdown-item .badge{
+    font-size:8px!important;
+    color:#fff!important;
+    line-height:1!important;
+    vertical-align:super!important
+}
+header .dropdown-item .badge-dotted{
+    width:6px!important;
+    height:6px!important;
+    padding:0!important
+}
+header .nav-item-login .icon{
+    font-size:20px
+}
+header .english-flage,header .khmer-flage{
+    display:inline-block;
+    width:22px;
+    height:22px;
+    background:url(../img/Cambodia-40px.png) no-repeat center;
+    background-size:contain;
+    vertical-align:sub
+}
+header .english-flage{
+    background:url(../img/United-Kingdom-40px.png) no-repeat center;
+    background-size:contain
+}
+header .btn-change-lang .text{
+    display:inline-block;
+    margin-left:6px
+}
+header .input-keyword{
+    padding-left:150px!important
+}
+header .select-category{
+    position:absolute;
+    left:0;
+    top:0;
+    width:140px!important;
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+    display:block
+}
+header select option{
+    position:relative
+}
+select option .main{
+    font-weight:700;
+    background:#e1e1e1!important
+}
+select option .child{
+    font-style:italic
+}
+header .dropdown-menu small{
+    display:block
+}
+header .icon-logo{
+    width:24px;
+    height:24px;
+    display:inline-block;
+    vertical-align:middle;
+    border-radius:50%;
+    overflow:hidden;
+    line-height:0;
+    box-shadow:0 0 1px 1px rgba(0,0,0,.15)
+}
+header .dropdown .rounded-circle{
+    width:40px;
+    height:40px;
+    padding-left:0;
+    padding-right:0;
+    text-align:center;
+    border:none;
+    font-size:24px;
+    line-height:0
+}

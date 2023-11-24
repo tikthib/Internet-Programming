@@ -156,7 +156,7 @@ li a{
         height:32px
     }
 }
-header{
+/* header{
     z-index:99;
     position:relative;
     box-shadow:0 1px 3px rgb(0 0 0/10%);
@@ -191,6 +191,10 @@ header .nav .nav-user-photo .dropdown-menu a:hover,header .nav .nav-user-photo .
     color:#006da1
 }
 header .nav .nav-user-photo .dropdown-menu a:active,header .nav .nav-user-photo .dropdown-menu a:active span{
+    color:#fff;
+    background:#006da1
+}
+.active {
     color:#fff;
     background:#006da1
 }
@@ -285,7 +289,7 @@ header .dropdown .rounded-circle{
     border:none;
     font-size:24px;
     line-height:0
-}
+} */
 .my-breadcrumb .breadcrumb{
     background:0 0;
     padding:12px 0;

@@ -78,14 +78,16 @@
     <div class="list-group"></div>
     <div class="row" id="categories-container">
       <div class="col-4 p-0">
-        <div id="listId" class="list-group" id="list-tab" role="tablist"></div>
+        <div id="listId" class="list-group" id="list-tab" role="tablist">
+        </div>
+        <a href=""></a>
       </div>
       <div class="col-8">
         <div class="tab-content d-flex flex-wrap" id="nav-tabContent"></div>
       </div>
     </div>
   </div>
-
+  <a href="pages/about.html">About</a>
   <!-- Latest ads -->
   <div class="latest mt-3 ">
     <h3>Latest Ads</h3>
@@ -582,6 +584,7 @@
       {
         name: "Cars and Vehicles",
         icon: "bi bi-car-front-fill",
+        link:"pages/about.html",
         subcategories: [
           {
             name: "Cars for sale",
@@ -1229,13 +1232,13 @@
       var linkList = document.getElementById("listId");
       for (var i = 0; i < data.length; i++) {
         var category = data[i];
+        
 
         var txt = `
-            <a
+            <a 
                   class="list-group-item list-group-item-action"
                   id="list-home-list"
-                  data-bs-toggle="list"
-                  href="#list-home"
+                  href="${category.link}"
                   role="tab"
                   aria-controls="list-home"
                   onmouseover="handleOnHover(${i})"

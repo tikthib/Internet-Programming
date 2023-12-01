@@ -584,7 +584,7 @@
       {
         name: "Cars and Vehicles",
         icon: "bi bi-car-front-fill",
-        link:"pages/about.html",
+        link: "pages/about.html",
         subcategories: [
           {
             name: "Cars for sale",
@@ -1232,7 +1232,7 @@
       var linkList = document.getElementById("listId");
       for (var i = 0; i < data.length; i++) {
         var category = data[i];
-        
+
 
         var txt = `
             <a 
@@ -1251,7 +1251,7 @@
 
     function handleOnHover(cateIndex) {
       var linkList = document.getElementById("nav-tabContent");
-      if(linkList.hasChildNodes()){
+      if (linkList.hasChildNodes()) {
         linkList.innerHTML = ""
       }
       var subcategories = categories[cateIndex].subcategories;

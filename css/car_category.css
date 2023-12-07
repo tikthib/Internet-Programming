@@ -83,13 +83,122 @@ a.link{
     margin-left: 10px;
 }
 /* list category */
-.list-categories,.title h3{
-    width: 75%;
+.list-categories,.title h4{
+    width: 80%;
+    /* width: 75%; */
     margin: auto;
 }
 .list-categories .row{
-    background:#fff !important;
+    /* background:#fff !important; */
 }
+.form-search{
+    background: #fff;
+    border-radius: 0.25rem!important;
+    border: 1px solid #dee2e6!important;
+    padding: 15px;
+}
+.form-control,.input-group-text {
+    padding: 0.575rem 0.75rem;
+    background: none;
+}
+.search-border ,.header-card{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 12px;
+    margin-bottom: 6px;
+    position: relative;
+}
+.header-card{
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 12px;
+    margin-bottom: 6px;
+    position: relative;
+}
+.bi-chevron-right::before{
+    color: #212529;
+    color: black !important;
+    font-weight: 900;
+}
+.select-province{
+    width: 100% !important;
+}
+.sort-by{
+    width: 100px;
+    /* background: #000; */
+    margin: auto;
+    display: flex;
+}
+.form-selectt{
+    width: 10px !important;
+    padding: 12px 26px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #495057;
+}
+option{
+   font-size: 18px;
+}
+h5{
+    font-size: 18px;
+    font-weight: 600;
+    color: #212529;
+}
+.nav-menu {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    justify-content: center;
+    margin-top: 20px;
+}
+.category{
+    white-space: nowrap;
+    padding: 15px;
+    background: #028dcf;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 8px;
+    border-radius: 5px;
+    display: block;
+    color: #fff;
+    text-shadow: 0 0 1px rgb(0 0 0/80%)!important;
+}
+.category a{
+    color: black;
+   
+}
+.sub-banner{
+    background: #fff;
+}
+.sub-banner img{
+    margin: auto;
+    display: flex;
+}
+.select-item{
+    width: 10px !important;
+    padding: 12px 26px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #495057;
+}
+
+
+/* card */
+
+
+.card{
+    padding: 10px;
+    border-color: #ee8001!important;
+}
+.price h5{
+   color:  #df0000;
+   font-weight: 600;
+}
+.group-image img{
+    width: 40px;
+    height: 40px;
+}
+
+
+
 
 
 /* footer */

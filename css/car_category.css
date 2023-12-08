@@ -173,6 +173,7 @@ h5{
 .sub-banner img{
     margin: auto;
     display: flex;
+    width: 80%;
 }
 .select-item{
     width: 10px !important;
@@ -211,6 +212,37 @@ h5{
     width: 267px;
     height: 200px;
 } */
+
+/* show 3 card */
+
+.card-control{
+    border:1px solid #ee8001!important;
+}
+.border-color{
+    border: none;
+}
+.desc-content{
+    padding: 10px;
+}
+.group-image-overlay img{
+    /* position: absolute; */
+    width: 40px;
+    height: 40px;
+    /* padding: 3px; */
+    margin: 2px;
+    margin-top: -43px;
+    border: 1px solid #fff;
+    /* bottom: 3px; */
+}
+
+.image{
+    /* position: relative; */
+}
+
+
+
+
+
 
 
 
@@ -262,6 +294,16 @@ svg.bi.bi-youtube{
         margin-top: 0;
         margin-bottom: 0rem;
     }
+    .group-image-overlay img{
+        /* position: absolute; */
+        width: 30px;
+        height: 30px;
+        /* padding: 3px; */
+        margin: 2px;
+        margin-top: -40px;
+        border: 1px solid #fff;
+        /* bottom: 3px; */
+    }
     /* .image{
         background: #e05454;
     }
@@ -291,4 +333,13 @@ svg.bi.bi-youtube{
         font-weight: 600;
         color: #212529;
     }
+    
+}
+@media(max-width:992px){
+    .list-categories .row {
+        width: 100%;
+        margin: auto;
+    }
+   
+    
 }

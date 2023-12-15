@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List all ads in cambodia</title>
+    <link rel="stylesheet" href="../css/detailAds.css" />
+  </head>
+  <body>
+    <div class="detail-ads-container">
+      <div class="ads-d-detail-titile">
+        <div class="sub-titile">
+          <a href="../index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 home-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+              />
+            </svg>
+            Home /
+            <p>List all Ads in Cambodia</p>
+          </a>
+        </div>
+        <div class="titile">
+          <p>List all Ads in Cambodia</p>
+        </div>
+      </div>
+      <div class="nav-menu">
+        <div class="menu-item first-menu-item">
+          <img src="../images/ads/logo/car-logo.png" alt="" />
+          <p>Car and Vehicles</p>
+        </div>
+        <div class="menu-item">
+          <img src="../images/ads/logo/phone.webp" alt="" />
+          <p>Car and Vehicles</p>
+        </div>
+        <div class="menu-item">
+          <img src="../images/ads/logo/apple-monitor.png" alt="" />
+          <p>Car and Vehicles</p>
+        </div>
+        <div class="menu-item">
+          <img src="../images/ads/logo/microwave.png" alt="" />
+          <p>Car and Vehicles</p>
+        </div>
+        <div class="menu-item">
+          <img src="../images/ads/logo/house.png" alt="" />
+          <p>House & Lands</p>
+        </div>
+        <div class="menu-item">
+          <img src="../images/ads/logo/bag.png" alt="" />
+          <p>Jobs</p>
+        </div>
+        <div class="menu-item">
+          <img src="../images/ads/logo/tournavis.png" alt="" />
+          <p>Services</p>
+        </div>
+        <div class="menu-item">
+          <img src="../images/ads/logo/fashion.png" alt="" />
+          <p>Fasion and Beauty</p>
+        </div>
+        <div class="menu-item">
+          <img src="../images/ads/logo/funiture.png" alt="" />
+          <p>Funiture & Decor</p>
+        </div>
+        <div class="menu-item">
+          <img src="../images/ads/logo/book.png" alt="" />
+          <p>Book, Sort and Hobbies</p>
+        </div>
+        <div class="menu-item">
+          <img src="../images/ads/logo/pet.png" alt="" />
+          <p>Pets</p>
+        </div>
+        <div class="menu-item">
+          <img src="../images/ads/logo/food.png" alt="" />
+          <p>Foods</p>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="filter-box">
+            <div class="filter_title">
+              <h3>Refine your Results</h3>
+            </div>
+            <form
+              class="form"
+              id="ftr_left"
+              method="get"
+              action="https://www.khmer24.com/en/all-ads?"
+            >
+            <div class="form-group filter-group">
+            <label class="filter-title">Search</label>
+                <div class="filter-data">
+                    <input
+                        type="text"
+                        name="q"
+                        value=""
+                        class="form-control form-control-"
+                        placeholder="Search"
+                    />
+                    <button title="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="m19.485 20.154l-6.262-6.262q-.75.639-1.725.989q-.975.35-1.96.35q-2.402 0-4.066-1.663q-1.664-1.664-1.664-4.065T5.47 5.436q1.663-1.667 4.064-1.667q2.402 0 4.068 1.664q1.666 1.664 1.666 4.067q0 1.042-.369 2.017q-.37.975-.97 1.668l6.262 6.261l-.707.708ZM9.538 14.23q1.99 0 3.361-1.37q1.37-1.37 1.37-3.361q0-1.99-1.37-3.36q-1.37-1.37-3.36-1.37q-1.99 0-3.361 1.37q-1.37 1.37-1.37 3.36q0 1.99 1.37 3.36q1.37 1.37 3.36 1.37Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="form-group filter-group">
+            <label class="filter-title">Price</label>
+                <div class="filter-data col">
+                    <input
+                        type="text"
+                        name="from_ad_price"
+                        value=""
+                        class="form-control form-control-"
+                        placeholder="From"
+                    />
+                    <input
+                        type="text"
+                        name="to_ad_price"
+                        value=""
+                        class="form-control form-control-"
+                        placeholder="To"
+                    />
+                    <button title="Submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                            <path fill="currentColor" fill-rule="evenodd" d="m6.5 17.5l8.25-5.5L6.5 6.5l1-1.5L18 12L7.5 19z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="form-group filter-group">
+              <label class="filter-title">City/Province</label>
+              <div class="filter-data last-form">
+                <select
+                  class="form-control fter_d form-control-"
+                  name="location"
+                >
+                  <option value="">All</option>
+                  <option value="phnom-penh">Phnom Penh</option>
+                  <option value="preah-sihanouk">Preah Sihanouk</option>
+                  <option value="kampong-cham">Kampong Cham</option>
+                  <option value="siem-reap">Siem Reap</option>
+                  <option value="battambang">Battambang</option>
+                  <option value="kandal">Kandal</option>
+                  <option value="tboung-khmum">Tboung Khmum</option>
+                  <option value="banteay-meanchey">Banteay Meanchey</option>
+                  <option value="takeo">Takeo</option>
+                  <option value="svay-rieng">Svay Rieng</option>
+                  <option value="stung-treng">Stung Treng</option>
+                  <option value="ratanakiri">Ratanakiri</option>
+                  <option value="pursat">Pursat</option>
+                  <option value="prey-veng">Prey Veng</option>
+                  <option value="preah-vihear">Preah Vihear</option>
+                  <option value="pailin">Pailin</option>
+                  <option value="oddar-meanchey">Oddar Meanchey</option>
+                  <option value="mondulkiri">Mondulkiri</option>
+                  <option value="kratie">Kratie</option>
+                  <option value="koh-kong">Koh Kong</option>
+                  <option value="kep">Kep</option>
+                  <option value="kampot">Kampot</option>
+                  <option value="kampong-thom">Kampong Thom</option>
+                  <option value="kampong-speu">Kampong Speu</option>
+                  <option value="kampong-chhnang">Kampong Chhnang</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="content-header">
+          <div class="content-header-left">
+            <h3>188468 Result On 08 Dec, 2023</h3>
+          </div>
+          <div class="content-header-right">
+            <div class="views">
+              <h4>View: </h4>
+              <div class="line-show">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+              </div>
+              <div class="grid-show">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5" />
+                </svg>
+              </div>
+            </div>
+            <div class="sort-by">
+              <label for="sortby"><h4>Sort By:</h4> </label>
+              <select id="sortby">
+                <option value="">Latest Ads</option>
+                <option value="">New Ads</option>
+                <option value="">Most Hit Ads</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="line-view">
+          <div class="ads-card">
+            <div class="ads-img">
+              <img src="../images/ads/car1.jpg" alt="">
+            </div>
+            <div class="card-desc">
+              <div class="titile">
+                <h3>RX350 2013 Full Options P2</h3>
+              </div>
+              <div class="paragraph">
+                <p>Lexus 2013 RX350 Full Option P2 តម្លៃពិសេស ធានាឡានអត់បុក អត់ច្រេះ ថ្នាំហ្សីន 95% ធានាជូនប្រអប់លេខ ម៉ាស៉ីន</p>
+              </div>
+              <div class="status">
+                <p>Phnom Penh / Just now</p>
+              </div>
+              <div class="price">
+                <h2>$78,000</h2>
+              </div>
+            </div>
+          </div>
+  
+          <div class="ads-card">
+            <div class="ads-img">
+              <img src="../images/ads/phone2.jpg" alt="">
+            </div>
+            <div class="card-desc">
+              <div class="titile">
+                <h3>RX350 2013 Full Options P2</h3>
+              </div>
+              <div class="paragraph">
+                <p>Lexus 2013 RX350 Full Option P2 តម្លៃពិសេស ធានាឡានអត់បុក អត់ច្រេះ ថ្នាំហ្សីន 95% ធានាជូនប្រអប់លេខ ម៉ាស៉ីន</p>
+              </div>
+              <div class="status">
+                <p>Phnom Penh / Just now</p>
+              </div>
+              <div class="price">
+                <h2>$78,000</h2>
+              </div>
+            </div>
+          </div>
+  
+          <div class="ads-card">
+            <div class="ads-img">
+              <img src="../images/ads/laptop4.png" alt="">
+            </div>
+            <div class="card-desc">
+              <div class="titile">
+                <h3>RX350 2013 Full Options P2</h3>
+              </div>
+              <div class="paragraph">
+                <p>Lexus 2013 RX350 Full Option P2 តម្លៃពិសេស ធានាឡានអត់បុក អត់ច្រេះ ថ្នាំហ្សីន 95% ធានាជូនប្រអប់លេខ ម៉ាស៉ីន</p>
+              </div>
+              <div class="status">
+                <p>Phnom Penh / Just now</p>
+              </div>
+              <div class="price">
+                <h2>$78,000</h2>
+              </div>
+            </div>
+          </div>
+  
+          <div class="ads-card">
+            <div class="ads-img">
+              <img src="../images/ads/car3.webp" alt="">
+            </div>
+            <div class="card-desc">
+              <div class="titile">
+                <h3>RX350 2013 Full Options P2</h3>
+              </div>
+              <div class="paragraph">
+                <p>Lexus 2013 RX350 Full Option P2 តម្លៃពិសេស ធានាឡានអត់បុក អត់ច្រេះ ថ្នាំហ្សីន 95% ធានាជូនប្រអប់លេខ ម៉ាស៉ីន</p>
+              </div>
+              <div class="status">
+                <p>Phnom Penh / Just now</p>
+              </div>
+              <div class="price">
+                <h2>$78,000</h2>
+              </div>
+            </div>
+          </div>
+  
+          <div class="ads-card">
+            <div class="ads-img">
+              <img src="../images/ads/phone3.jpg" alt="">
+            </div>
+            <div class="card-desc">
+              <div class="titile">
+                <h3>RX350 2013 Full Options P2</h3>
+              </div>
+              <div class="paragraph">
+                <p>Lexus 2013 RX350 Full Option P2 តម្លៃពិសេស ធានាឡានអត់បុក អត់ច្រេះ ថ្នាំហ្សីន 95% ធានាជូនប្រអប់លេខ ម៉ាស៉ីន</p>
+              </div>
+              <div class="status">
+                <p>Phnom Penh / Just now</p>
+              </div>
+              <div class="price">
+                <h2>$78,000</h2>
+              </div>
+            </div>
+          </div>
+  
+          <div class="ads-card">
+            <div class="ads-img">
+              <img src="../images/ads/laptop2.jpg" alt="">
+            </div>
+            <div class="card-desc">
+              <div class="titile">
+                <h3>RX350 2013 Full Options P2</h3>
+              </div>
+              <div class="paragraph">
+                <p>Lexus 2013 RX350 Full Option P2 តម្លៃពិសេស ធានាឡានអត់បុក អត់ច្រេះ ថ្នាំហ្សីន 95% ធានាជូនប្រអប់លេខ ម៉ាស៉ីន</p>
+              </div>
+              <div class="status">
+                <p>Phnom Penh / Just now</p>
+              </div>
+              <div class="price">
+                <h2>$78,000</h2>
+              </div>
+            </div>
+          </div>
+  
+          <div class="ads-card">
+            <div class="ads-img">
+              <img src="../images/ads/watch2.webp" alt="">
+            </div>
+            <div class="card-desc">
+              <div class="titile">
+                <h3>RX350 2013 Full Options P2</h3>
+              </div>
+              <div class="paragraph">
+                <p>Lexus 2013 RX350 Full Option P2 តម្លៃពិសេស ធានាឡានអត់បុក អត់ច្រេះ ថ្នាំហ្សីន 95% ធានាជូនប្រអប់លេខ ម៉ាស៉ីន</p>
+              </div>
+              <div class="status">
+                <p>Phnom Penh / Just now</p>
+              </div>
+              <div class="price">
+                <h2>$78,000</h2>
+              </div>
+            </div>
+          </div>
+  
+          <div class="ads-card">
+            <div class="ads-img">
+              <img src="../images/ads/car4.jpg" alt="">
+            </div>
+            <div class="card-desc">
+              <div class="titile">
+                <h3>RX350 2013 Full Options P2</h3>
+              </div>
+              <div class="paragraph">
+                <p>Lexus 2013 RX350 Full Option P2 តម្លៃពិសេស ធានាឡានអត់បុក អត់ច្រេះ ថ្នាំហ្សីន 95% ធានាជូនប្រអប់លេខ ម៉ាស៉ីន</p>
+              </div>
+              <div class="status">
+                <p>Phnom Penh / Just now</p>
+              </div>
+              <div class="price">
+                <h2>$78,000</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-view hide-el">
+
+          <div class="box-view">
+            <div class="box-img">
+              <img src="../images//ads/car1.jpg" alt="">
+            </div>
+            <div class="box-titile">
+              <p>Honda Lead 125 2016 from Japan 1590$</p>
+            </div>
+            <div class="box-status">
+              <p>
+                Phnom Penh13  /  minutes ago
+              </p>
+            </div>
+            <div class="box-price">
+              <h2>$1,590</h2>
+            </div>
+          </div>
+
+          <div class="box-view">
+            <div class="box-img">
+              <img src="../images//ads/car1.jpg" alt="">
+            </div>
+            <div class="box-titile">
+              <p>Honda Lead 125 2016 from Japan 1590$</p>
+            </div>
+            <div class="box-status">
+              <p>
+                Phnom Penh13  /  minutes ago
+              </p>
+            </div>
+            <div class="box-price">
+              <h2>$1,590</h2>
+            </div>
+          </div>
+
+          <div class="box-view">
+            <div class="box-img">
+              <img src="../images//ads/car1.jpg" alt="">
+            </div>
+            <div class="box-titile">
+              <p>Honda Lead 125 2016 from Japan 1590$</p>
+            </div>
+            <div class="box-status">
+              <p>
+                Phnom Penh13  /  minutes ago
+              </p>
+            </div>
+            <div class="box-price">
+              <h2>$1,590</h2>
+            </div>
+          </div>
+
+
+          <div class="box-view">
+            <div class="box-img">
+              <img src="../images//ads/car1.jpg" alt="">
+            </div>
+            <div class="box-titile">
+              <p>Honda Lead 125 2016 from Japan 1590$</p>
+            </div>
+            <div class="box-status">
+              <p>
+                Phnom Penh13  /  minutes ago
+              </p>
+            </div>
+            <div class="box-price">
+              <h2>$1,590</h2>
+            </div>
+          </div>
+
+
+          <div class="box-view">
+            <div class="box-img">
+              <img src="../images//ads/car1.jpg" alt="">
+            </div>
+            <div class="box-titile">
+              <p>Honda Lead 125 2016 from Japan 1590$</p>
+            </div>
+            <div class="box-status">
+              <p>
+                Phnom Penh13  /  minutes ago
+              </p>
+            </div>
+            <div class="box-price">
+              <h2>$1,590</h2>
+            </div>
+          </div>
+
+
+          <div class="box-view">
+            <div class="box-img">
+              <img src="../images//ads/car1.jpg" alt="">
+            </div>
+            <div class="box-titile">
+              <p>Honda Lead 125 2016 from Japan 1590$</p>
+            </div>
+            <div class="box-status">
+              <p>
+                Phnom Penh13  /  minutes ago
+              </p>
+            </div>
+            <div class="box-price">
+              <h2>$1,590</h2>
+            </div>
+          </div>
+
+
+          <div class="box-view">
+            <div class="box-img">
+              <img src="../images//ads/car1.jpg" alt="">
+            </div>
+            <div class="box-titile">
+              <p>Honda Lead 125 2016 from Japan 1590$</p>
+            </div>
+            <div class="box-status">
+              <p>
+                Phnom Penh13  /  minutes ago
+              </p>
+            </div>
+            <div class="box-price">
+              <h2>$1,590</h2>
+            </div>
+          </div>
+
+
+          <div class="box-view">
+            <div class="box-img">
+              <img src="../images//ads/car1.jpg" alt="">
+            </div>
+            <div class="box-titile">
+              <p>Honda Lead 125 2016 from Japan 1590$</p>
+            </div>
+            <div class="box-status">
+              <p>
+                Phnom Penh13  /  minutes ago
+              </p>
+            </div>
+            <div class="box-price">
+              <h2>$1,590</h2>
+            </div>
+          </div>
+
+
+          <div class="box-view">
+            <div class="box-img">
+              <img src="../images//ads/car1.jpg" alt="">
+            </div>
+            <div class="box-titile">
+              <p>Honda Lead 125 2016 from Japan 1590$</p>
+            </div>
+            <div class="box-status">
+              <p>
+                Phnom Penh13  /  minutes ago
+              </p>
+            </div>
+            <div class="box-price">
+              <h2>$1,590</h2>
+            </div>
+          </div>
+
+
+          <div class="box-view">
+            <div class="box-img">
+              <img src="../images//ads/car1.jpg" alt="">
+            </div>
+            <div class="box-titile">
+              <p>Honda Lead 125 2016 from Japan 1590$</p>
+            </div>
+            <div class="box-status">
+              <p>
+                Phnom Penh13  /  minutes ago
+              </p>
+            </div>
+            <div class="box-price">
+              <h2>$1,590</h2>
+            </div>
+          </div>
+
+
+          <div class="box-view">
+            <div class="box-img">
+              <img src="../images//ads/car1.jpg" alt="">
+            </div>
+            <div class="box-titile">
+              <p>Honda Lead 125 2016 from Japan 1590$</p>
+            </div>
+            <div class="box-status">
+              <p>
+                Phnom Penh13  /  minutes ago
+              </p>
+            </div>
+            <div class="box-price">
+              <h2>$1,590</h2>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const lineView = document.querySelector('.line-view');
+    const gridView = document.querySelector('.grid-view');
+
+    const lineShowBtn = document.querySelector('.line-show');
+    const gridShowBtn = document.querySelector('.grid-show');
+    
+    gridShowBtn.addEventListener('click', function() {
+      console.log(gridView);
+      lineView.classList.add('hide-el');
+      gridView.classList.remove('hide-el');
+    });
+
+    lineShowBtn.addEventListener('click', function() {
+      console.log(lineView);
+      gridView.classList.add('hide-el');
+      lineView.classList.remove('hide-el');
+    })
+  </script>
+</html>

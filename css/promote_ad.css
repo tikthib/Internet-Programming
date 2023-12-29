@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(239, 239, 239);
+    font-family: "Khmer OS Siemreap";
+}
+.container{
+    padding: 20px;
+    width: 80%;
+}
+.sky-background{
+    position: relative;
+}
+.description{
+    position: absolute;
+    margin: 40px 20px 10px;
+    color: white;
+    font-size: 14px;
+}
+hr{
+    margin: 0;
+    color: rgb(75, 75, 255);
+}
+.body{
+    background-color: white;
+    padding: 30px;
+    line-height: 2;
+}
+.btn{
+    background-color: rgb(230, 130, 59);
+    font-size: 13px;
+    color: white;
+}
+.btn:hover{
+    background-color: chocolate;
+    color: white;
+}

@@ -62,7 +62,7 @@ a {
     border-radius: 7px;
 }
 .main-content {
-    width: 70%;
+    width: 73%;
     display: flex;
     flex-wrap: wrap;
     padding-left: 10px;
@@ -151,7 +151,7 @@ select {
 .ads-card .ads-img {
     display: flex;
     justify-content: center;
-    width: 30%;
+    width: 300px;
     padding: 20px;
 }
 .ads-card .ads-img img {
@@ -169,6 +169,132 @@ select {
     line-height: 0;
 }
 .ads-card .card-desc .price {
-    padding: 20px;
     color: red;
+}
+.content-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gray;
+}
+.content-header-left, .content-header-right {
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+.content-header-left {
+    width: 40%;
+}
+.content-header-right {
+    justify-content: end;
+    width: 60%;
+}
+.content-header .views, .content-header .sort-by {
+    display: flex; 
+    width: 120px;
+    margin-right: 5px;
+    justify-content: space-evenly;
+    height: 20px;
+    align-items: center;
+}
+.line-show {
+    margin-left: 5px;
+}
+.line-show, .grid-show  {
+    width: 20px;
+    padding: 8px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid rgb(216, 216, 216);
+    cursor: pointer;
+}
+.content-header .sort-by {
+    width: 210px;
+}
+.content-header .sort-by label {
+    width: 200px;
+    margin-left: 10px;
+}
+.content-header .sort-by select {
+    width: 300px;
+    margin-left: -15px;
+}
+.content-header .sort-by select option {
+    cursor: pointer;
+}
+.hide-el {
+    display: none !important;
+}
+.grid-view, .line-view {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid-view .box-view  {
+    width: 31%;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.grid-view .box-view:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.grid-view .box-view .box-img img {
+    width: 100%;
+}
+.box-titile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.box-titile p {
+    font-size: 15px;
+    width: 90%;
+    margin-top: -1px;
+    font-weight: bold;
+}
+.box-status p {
+    font-size: 13px;
+}
+.box-price, .box-status {
+    width: 90%;
+    margin: auto;
+    line-height: 0;
+}
+.grid-view .box-view .box-price {
+    color: red;
+    padding-bottom: 5px;
+}
+@media(max-width: 1800px) and (min-width: 1200px) {
+    .detail-ads-container {
+        width: 90%;
+    }
+    .card-desc .price {
+        line-height: 0;
+        padding: 5px;
+    }
+    .grid-view .box-view .box-img img {
+        height: 100%;
+        width: 100%;
+    }
+}
+@media(max-width: 1800px) and (min-width: 1200px) { 
+    .first-menu-item {
+        margin-left: 450px;
+    }
+}
+@media(max-width: 1200px) and (min-width:900px) {
+    .detail-ads-container {
+        width: 100%;
+    }
+    .first-menu-item {
+        margin-left: 650px;
+    }
+    .card-desc .price {
+        padding: 10px;
+        color: blue;
+        line-height: 0;
+    }
 }

@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(239, 239, 239);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.bold{
+    width: 25%;
+    font-weight: bold;
+    font-size: small;
+    vertical-align: middle;
+    border-bottom: none;
+}
+.description{
+    font-size: small;
+    border-bottom: none;
+}
+.container{
+    padding-top: 25px;
+}
+.around-table{
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    border: 1px solid rgb(196, 193, 193);
+    border-radius: 5px;
+    padding: 10px;
+}

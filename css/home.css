@@ -82,7 +82,11 @@ input::placeholder{
 .list-categories .row{
     background:#fff !important;
 }
+.tab-pane {
+    border: 1px solid #eee;
+    /* padding: 15px; */
 
+}
 
 /* latest ads */
 

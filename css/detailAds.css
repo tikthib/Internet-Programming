@@ -175,7 +175,7 @@ select {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
 }
 .content-header-left, .content-header-right {
     height: 20px;
@@ -296,5 +296,16 @@ select {
         padding: 10px;
         color: blue;
         line-height: 0;
+    }
+}
+@media(max-width: 900px) and (min-width:650px) {
+    .detail-ads-container {
+        width: 100%;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .main-content {
+        width: 100%;
     }
 }

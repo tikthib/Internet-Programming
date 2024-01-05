@@ -304,7 +304,7 @@ category_search.forEach((value) => {
   option.textContent = value.title;
   // category_search_value1.appendChild(option);
   if (category_search_value1 == null) {
-    category_search_value2.appendChild(option);
+    // category_search_value2.appendChild(option);
   } else {
     category_search_value1.appendChild(option);
   }

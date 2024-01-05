@@ -146,8 +146,8 @@ h5{
 .nav-menu {
     width: 100%;
     display: flex;
-    overflow-x: scroll;
-    justify-content: center;
+    /* overflow-x: scroll; */
+    /* justify-content: center; */
     margin-top: 20px;
 }
 .category{
@@ -343,11 +343,3 @@ svg.bi.bi-youtube{
    
     
 }
-
-
-.avatar {
-    vertical-align: middle;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-  }

@@ -32,11 +32,11 @@ dob.textContent = dob_data;
 gender.textContent = gender_data;
 
 // phone_number_input.value = phone_number_data;
-phone_number_input.setAttribute('value',phone_number_data);
-email_input.setAttribute('value',email_data);
-first_name_input.setAttribute('value',first_name_data);
-last_name_input.setAttribute('value',last_name_data);
-dob_input.value = dob_data;
+// phone_number_input.setAttribute('value',phone_number_data);
+// email_input.setAttribute('value',email_data);
+// first_name_input.setAttribute('value',first_name_data);
+// last_name_input.setAttribute('value',last_name_data);
+// dob_input.value = dob_data;
 
 
 

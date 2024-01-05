@@ -23,7 +23,7 @@
     <header id="header2" class="bg-white authorized">
         <div class="my-container header-content">
             <nav class="navbar row">
-                <a href="" class="navbar-brand"><img height="50px" width="163px" src="https://www.khmer24.com/v1.0.2/template/img/khmer24.gif" alt="Khmer24"></a>
+                <a href="../index.html" class="navbar-brand"><img height="50px" width="163px" src="https://www.khmer24.com/v1.0.2/template/img/khmer24.gif" alt="Khmer24"></a>
                 <ul class="nav mr-auto left-nav">
                     <li class="nav-item">
                         <a class="nav-link btn-change-lang" href="" title="Switch Language"><span class="icon khmer-flage"></span></a>
@@ -39,8 +39,8 @@
                             </a>
                         </div>
                     </li>
-                    <li class="nav-item ml-2">
-                        <a class="nav-link btn-post btn-warning long-text" href="">Log Out</a>
+                    <li class="nav-item ml-2" onclick="onLogout()">
+                        <a class="nav-link btn-post btn-warning long-text" href="../index.html">Log Out</a>
                     </li>
                 </ul>
             </nav>
@@ -233,19 +233,18 @@
                 <div class="col">
                     <p class="fheader">About Khmer24</p>
                     <ul class="list-unstyled mb-0">
-                        <li><a href="" title="Contact Us">Contact Us</a></li>
-                        <li><a href="" title="Contact Us">About Us</a></li>
-                        <li><a href="">Membership</a></li>
-                        <li><a href="">Promote Ad</a></li>
-                        <li><a href="" title="Privacy Policy">Private
-                                Policy</a></li>
+                        <li><a href="contact_us.html" title="Contact Us">Contact Us</a></li>
+                        <li><a href="about.html" title="Contact Us">About Us</a></li>
+                        <li><a href="Membership.html">Membership</a></li>
+                        <li><a href="promote_ad.html">Promote Ad</a></li>
+                        <li><a href="private_policy.html" title="Privacy Policy">Private Policy</a></li>
                     </ul>
                 </div>
                 <div class="col">
                     <p class="fheader">Useful Information</p>
                     <ul class="list-unstyled">
-                        <li><a href="">Safety Tip</a></li>
-                        <li><a href="">Ad Posting Rule</a></li>
+                        <li><a href="safety.html">Safety Tip</a></li>
+                        <li><a href="ad_posting_rule.html">Ad Posting Rule</a></li>
                     </ul>
                 </div>
                 <div class="col">
@@ -294,6 +293,7 @@
         <a href="" class="btn btn-primary btn-sm">Feedback</a>
     </div>
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/dkern/jquery.lazy@1.7.10/jquery.lazy.min.js"></script>
+    <script src="../js/logout.js"></script>
     <script src="../../js/header_view.js"></script>
     <script src="../js/edit-profile.js"></script>
 </body>

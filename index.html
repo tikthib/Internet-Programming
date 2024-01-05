@@ -118,13 +118,22 @@
   <div class="list-categories">
     <div class="list-group"></div>
     <div class="row" id="categories-container">
-      <div class="col-4 p-0">
-        <div id="listId" class="list-group" id="list-tab" role="tablist"></div>
+      <div class="col-3 p-0">
+        <div id="listId" class="list-group" id="list-tab" role="tablist">
+        </div>
+        <a href=""></a>
+      </div>
+      <div class="col-9">
+        <div class="tab-content d-flex flex-wrap" id="nav-tabContent"></div>
+      </div>
+      <!-- <div class="col-4 p-0">
+        <div id="listId" class="list-group" id="list-tab" role="tablist">
+        </div>
         <a href=""></a>
       </div>
       <div class="col-8">
         <div class="tab-content d-flex flex-wrap" id="nav-tabContent"></div>
-      </div>
+      </div> -->
     </div>
   </div>
   <!-- Latest ads -->
@@ -528,11 +537,14 @@
         subcategories: [
           {
             name: "House & Lands",
+            link: "components/car_category.html",
             image:
               "https://www.pinuphouses.com/wp-content/uploads/off-grid-small-house-plans.png",
           },
           {
             name: "Cars for sale",
+            link: "components/car_category.html",
+
             image:
               "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/eqe-sedan/all-vehicles/2023-EQE350-SEDAN-AVP-DR.png",
           },
@@ -631,6 +643,7 @@
           {
             name: "Cars for sale",
             image: "",
+
           },
           {
             name: "Bicycles",
@@ -673,7 +686,7 @@
       {
         name: "Phones & Tablets",
         icon: "bi bi-phone",
-        link: "components/car_category.html",
+        link: "components/mobiles.html",
         subcategories: [
           {
             name: "Phones",
@@ -700,7 +713,7 @@
       {
         name: "Computers & Accessories",
         icon: "bi bi-laptop",
-        link: "components/car_category.html",
+        link: "components/computer_accessories.html",
         subcategories: [
           {
             name: "Laptops",
@@ -735,7 +748,7 @@
       {
         name: "Electronics",
         icon: "bi bi-display",
-        link: "components/car_category.html",
+        link: "components/electronics_appliances.html",
         subcategories: [
           {
             name: "Washing",
@@ -790,6 +803,7 @@
       {
         name: "House & Lands",
         icon: "bi bi-house",
+        link: "components/mobiles.html",
         subcategories: [
           {
             name: "House for sale",
@@ -848,6 +862,7 @@
       {
         name: "Jobs",
         icon: "bi bi-briefcase",
+        link: "components/mobiles.html",
         subcategories: [
           {
             name: "Accounting",
@@ -998,6 +1013,7 @@
       {
         name: "Services",
         icon: "bi bi-wrench-adjustable",
+        link: "components/services.html",
         subcategories: [
           {
             name: "Acconting",
@@ -1096,6 +1112,7 @@
       {
         name: "Fashion & Beauty",
         icon: "bi bi-eyeglasses",
+        link: "components/fashion_beauty.html",
         subcategories: [
           {
             name: "Women's Fashion",
@@ -1126,6 +1143,7 @@
       {
         name: "Furniture & Decor",
         icon: "bi bi-door-closed",
+        link: "components/furniture_decor.html",
         subcategories: [
           {
             name: "Tablets & Desks",
@@ -1172,6 +1190,7 @@
       {
         name: "Books, Sports & Hobbies",
         icon: "bi bi-book",
+        link: "components/books_sports.html",
         subcategories: [
           {
             name: "Musical Instruments",
@@ -1206,6 +1225,7 @@
       {
         name: "Pets",
         icon: "bi bi-twitter",
+        link: "components/pets.html",
         subcategories: [
           {
             name: "Dogs",
@@ -1240,6 +1260,7 @@
       {
         name: "Foods",
         icon: "bi bi-egg",
+        link: "components/food.html",
         subcategories: [
           {
             name: "Meats",
@@ -1310,17 +1331,44 @@
         linkList.innerHTML = ""
       }
       var subcategories = categories[cateIndex].subcategories;
-      for (var j = 0; j < subcategories.length; j++) {
-        var name = subcategories[j].name;
-        var image = subcategories[j].image;
+      if (cateIndex === 0) {
+        for (var j = 0; j < subcategories.length; j++) {
+          var name = subcategories[j].name;
+          var image = subcategories[j].image;
+          console.log(subcategories[j]);
 
-        var txt = ` <div
+          var txt = `<a href="${subcategories[j].link}" 
+                  <div
                   class="tab-pane col-3 text-center py-2 fade show active"
                   id="list-home"
                   role="tabpanel"
                   aria-labelledby="list-home-list"
                 >
                 <div>
+              
+                    <img
+            src="${image}"
+            height="70px" 
+            alt=""
+          /></div>
+               ${name}øó
+                </div> </a>`;
+
+          linkList.innerHTML += txt;
+        }
+      }
+      for (var j = 0; j < subcategories.length; j++) {
+        var name = subcategories[j].name;
+        var image = subcategories[j].image;
+
+        var txt = `<div
+                  class="tab-pane col-3 text-center py-2 fade show active"
+                  id="list-home"
+                  role="tabpanel"
+                  aria-labelledby="list-home-list"
+                >
+                <div>
+              
                     <img
             src="${image}"
             height="70px" 

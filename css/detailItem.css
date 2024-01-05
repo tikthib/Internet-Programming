@@ -6,7 +6,7 @@ body {
     flex-wrap: wrap;
 }
 .detail-item {
-    width: 60%;
+    width: 70%;
     margin: auto;
 }
 .ads-banner {
@@ -106,7 +106,6 @@ body {
     padding-right: 10px;
 }
 .card-item .desc-body .desc-box hr {
-    /* border-bottom: 10px dashed solid rgb(167, 162, 162); */
     border-top: 1px dashed gray;
 }
 .card-item .desc-body .desc-box span {
@@ -141,40 +140,148 @@ a {
 .phone-section .phone-number-section {
     width: 90%;
 }
-.phone-section .phone-number-section h1 {
+.phone-section .phone-number-section h2 {
     line-height: 0;
 }
-
-.user-card {
-    background-color: white;
+.user-card-and-sponsor {
+    height: 1100px;
     width: 30%;
-    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.user-card {
+    width: 100%;
+    background-color: white;
+    height: 470px;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.user-card .profile {
+    display: flex;
+    height: 100px;
+    background-color: #018ccf;
+}
+.user-card .profile .user-info {
+    width: 80%;
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+}
+.user-card .profile .user-info .username {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 20px;
+    width: 100%;
+}
+.user-card .profile .user-info p {
+    margin: 0;
+    font-size: 12px;
+    margin-top: -20px;
+}
+.user-card .phone-section {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+.user-card .phone-section .img img {
+    width: 50px;
+}
+.user-card .phone-section .phone-number-section {
+    padding-left: 20px;
+}
+.user-card .phone-section .phone-number-section h2 {
+    line-height: 0;
+}
+.user-card .user-website {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding-top: 15px;
+}
+.user-card .user-website .store-icon {
+    width: 30px;
+}
+.user-card .user-website a {
+    width: 80%;
+    padding-left: 20px;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box !important;
+}
+.user-card .user-map {
+    width: 93%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.user-card .user-map .map-icon {
+    width: 40px;
 }
 .user-card .profile .pro-img {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
 }
 .user-card .profile .pro-img img {
     width: 100px;
+    height: 100px;
 }
-.user-card .user-name {
-    text-align: center;
-}
-.user-card .user-name p {
-    font-size: 18px;
-}
-.user-status {
-    display: flex;
-    width: 60%;
+.user-card .map-container {
+    height: 100px;
     margin: auto;
+    width: 90%;
+}
+.user-card .chat {
+    width: 90%;
+    margin: auto;
+    background-color: #ff8900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    cursor: pointer;
+    padding: 10px;
+}
+.user-card .chat .chat-icon {
+    width: 20px;
+}
+.card-footer {
+    width: 98%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid blue;
+    color: blue;
+}
+.card-footer .share,
+.card-footer .report {
+    width: 70px;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.verify-icon {
+.card-footer .card-icon-footer {
     width: 20px;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
 }
 /* ICON */
 .home-icon {
     width: 15px;
+}
+
+
+@media(max-width: 1800px) and (min-width: 1200px) { 
+    .main-container {
+        background-color: red;
+    }
 }

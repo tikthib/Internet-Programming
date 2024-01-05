@@ -1,3 +1,7 @@
+// Check Authenticated
+
+
+
 const _privacy_policy_list = [
   {
     id: "#rule",

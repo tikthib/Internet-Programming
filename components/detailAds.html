@@ -578,13 +578,11 @@
     const gridShowBtn = document.querySelector('.grid-show');
     
     gridShowBtn.addEventListener('click', function() {
-      console.log(gridView);
       lineView.classList.add('hide-el');
       gridView.classList.remove('hide-el');
     });
 
     lineShowBtn.addEventListener('click', function() {
-      console.log(lineView);
       gridView.classList.add('hide-el');
       lineView.classList.remove('hide-el');
     })

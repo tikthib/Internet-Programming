@@ -1272,6 +1272,16 @@
       },
     ];
 
+      
+    const detailCard = document.querySelectorAll('.card');
+    detailCard.forEach(element => {
+      element.addEventListener('click',  function (e) {
+        console.log('cliking--');
+        location.href = 'components/detailItem.html';
+      })
+    });
+   
+
     buildList(categories);
     function buildList(data) {
       var linkList = document.getElementById("listId");
